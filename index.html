@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="estilos/estilos.css" rel="stylesheet">
+    <title> Inicio - Kit UI Sercotec</title>
+</head>
+<body>
+
+      <!--HEADER-->
+    <header>
+        <div class="header-footer-box d-flex flex-column flex-sm-row">
+            <div> <img class="mx-4" src="images/logo-sercotec.png" width="140" height="69" alt="Logo Sercotec" title="Logo Sercotec"></div>
+            <div> <h1>Título de sistema aquí</h1></div> 
+            <div class="d-flex flex-sm-row flex-column gap-20 align-right-header mx-4 justify-content-center">
+                <div class="align-self-center"><img src="images/avatar-header.png" width="50" height="50"></div>
+                <div>
+                    <p class="p-header">Carolina Valentina Bustamante Valenzuela</p>
+                    <p class="p-header">Nombre de cargo</p>
+                    <p class="small-text p-header">
+                        <span class="material-symbols-outlined align-middle">
+                            location_on
+                        </span>
+                        Región Arica y Parinacota
+                    </p>
+                </div>
+               </div>
+               <button id="burger-menu" class="btn-menu collapsed" type="button">
+                <i class="bi bi-list"></i> Menu
+               </button>                       
+        </div>
+    </header>   
+    <!--HEADER-->
+
+    <div class="main-box">
+        <!--SIDEBAR-->
+        <div class="sidebar-menu">
+              <!-- partial:index.partial.html -->
+              <div class="nav-bar">
+                <div class="nav-content">                   
+                       <button type="button" class="nav-button">
+                          <span class="material-symbols-outlined active">
+                            home </span> 
+                            Inicio 
+                       </button> 
+                       
+                       <button type="button" class="nav-button">
+                        <span class="material-symbols-outlined">
+                          folder_open
+                          </span>
+                          Botón 2 
+                       </button> 
+
+                       <button type="button" class="nav-button">
+                        <span class="material-symbols-outlined">
+                          settings
+                          </span>
+                          Botón 3 
+                       </button> 
+
+                       <button type="button" class="nav-button">
+                        <span class="material-symbols-outlined">
+                          logout
+                          </span>
+                          Cerrar
+                       </button>
+                                                          
+                    <div id="nav-content-highlight"></div>
+                    </div>
+              </div>
+             <!-- partial -->
+        </div> 
+         <!--SIDEBAR-->
+
+         <div class="white-container">
+                <!--MIGAS DE PAN-->             
+                <div class="breadcrumbs">
+                    <a href="#"><span class="material-symbols-outlined align-bottom">home</span>
+                        Bandeja de entrada</a> /
+                    <a href="#" class="active"> Ejemplo página interior activa</a>
+                </div>
+                <!--MIGAS DE PAN-->
+              <!--BOTONES-->
+              <h1 class="my-4"> Botones </h1>
+              <button type="button" class="btn-primary">Botón con color</button>
+              <button type="button" class="btn-primary"><span class="material-symbols-outlined align-middle">
+              add_circle </span> Botón Ejemplo con icono</button>
+              <button type="button" class="btn-secondary"> Botón Outlined</button>
+              <!--BOTONES-->
+              <hr class="my-4 py-4">
+
+                              <!--TABLA-->
+                              <h1 class="my-4">Tabla </h1>
+                              <div class="table-responsive">
+                            <!--FORMULARIO search--->
+                              <div class="form-floating my-3 mx-1 w-75">
+                                <input type="text" class="form-control buscador-input" id="floatingInput" placeholder="Buscar....">
+                                <label for="floatingInput">Buscador garantías</label>
+                              </div>
+                             <!--FORMULARIO search--->
+                                  <table class="table table-striped">
+                                      <thead>
+                                      <tr>
+                                          <th>Nombre</th>
+                                          <th>R.U.N</th>
+                                          <th>Región</th>
+                                          <th>Estado</th>
+                                          <th>Acción</th>
+                                      </tr>
+                                      </thead>
+                                      <tbody>
+                                      <tr>
+                                          <td>Carolina Valentina Bustamante Troncoso</td>
+                                          <td>15608058-6</td>
+                                          <td>Arica y Parinacota</td>
+                                          <td><button type="button" class="chips-main sucess">Activo</button></td>
+                                          <td> 
+                                              <button class="action border-0 bg-transparent rounded" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  <span class="material-symbols-outlined align-middle color-blue">
+                                                      more_vert
+                                                  </span>
+                                              </button>
+                                              <ul class="dropdown-menu">
+                                                <li>
+                                                  <a class="dropdown-item" href="#">
+                                                      <span class="material-symbols-outlined align-middle">
+                                                  visibility 
+                                                      </span> Ver
+                                                  </a>
+                                              </li>
+                                                <li>
+                                                  <a class="dropdown-item" href="#">
+                                                      <span class="material-symbols-outlined align-middle">
+                                                  edit
+                                                      </span> Editar
+                                                  </a>
+                                                </li>
+                                              </ul>
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>Carolina Valentina Bustamante Troncoso</td>
+                                          <td>15608058-7</td>
+                                          <td>Metropolitana</td>
+                                          <td><button type="button" class="chips-main warning-orange">Vence 90 días</button></td>
+                                          <td> 
+                                              <button class="action border-0 bg-transparent rounded" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  <span class="material-symbols-outlined align-middle color-blue">
+                                                      more_vert
+                                                  </span>
+                                              </button>
+                                              <ul class="dropdown-menu">
+                                                <li>
+                                                  <a class="dropdown-item" href="#">
+                                                      <span class="material-symbols-outlined align-middle">
+                                                  visibility 
+                                                      </span> Ver
+                                                  </a>
+                                              </li>
+                                                <li>
+                                                  <a class="dropdown-item" href="#">
+                                                      <span class="material-symbols-outlined align-middle">
+                                                  edit
+                                                      </span> Editar
+                                                  </a>
+                                                </li>
+                                              </ul>
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>Carolina Valentina Bustamante Troncoso</td>
+                                          <td>15608058-7</td>
+                                          <td>Tarapacá</td>
+                                          <td><button type="button" class="chips-main warning-yellow">Vence 60 días</button></td>
+                                          <td> 
+                                              <button class="action border-0 bg-transparent rounded" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  <span class="material-symbols-outlined align-middle color-blue">
+                                                      more_vert
+                                                  </span>
+                                              </button>
+                                              <ul class="dropdown-menu">
+                                                <li>
+                                                  <a class="dropdown-item" href="#">
+                                                      <span class="material-symbols-outlined align-middle">
+                                                  visibility 
+                                                      </span> Ver
+                                                  </a>
+                                              </li>
+                                                <li>
+                                                  <a class="dropdown-item" href="#">
+                                                      <span class="material-symbols-outlined align-middle">
+                                                  edit
+                                                      </span> Editar
+                                                  </a>
+                                                </li>
+                                              </ul>
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>Carolina Valentina Bustamante Troncoso</td>
+                                          <td>15608058-7</td>
+                                          <td>Tarapacá</td>
+                                          <td><button type="button" class="chips-main danger">Vence 30 días</button></td>
+                                          <td> 
+                                              <button class="action border-0 bg-transparent rounded" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  <span class="material-symbols-outlined align-middle color-blue">
+                                                      more_vert
+                                                  </span>
+                                              </button>
+                                              <ul class="dropdown-menu">
+                                                <li>
+                                                  <a class="dropdown-item" href="#">
+                                                      <span class="material-symbols-outlined align-middle">
+                                                  visibility 
+                                                      </span> Ver
+                                                  </a>
+                                              </li>
+                                                <li>
+                                                  <a class="dropdown-item" href="#">
+                                                      <span class="material-symbols-outlined align-middle">
+                                                  edit
+                                                      </span> Editar
+                                                  </a>
+                                                </li>
+                                              </ul>
+                                          </td>
+                                      </tr>                       
+                                  </tbody>
+                                  </table>
+                              </div>
+                              <!--TABLA-->
+                              <hr class="my-4 py-4">
+
+                <!--PAGINACION-->
+                <h1 class="my-4">Paginación</h1>
+                <nav aria-label="...">
+                    <ul class="pagination kit-gob">
+                      <li class="page-item kit-gob disabled">
+                        <span class="page-link kit-gob">
+                            <span class="material-symbols-outlined">
+                                chevron_left
+                            </span>
+                        </span>
+                      </li>
+                      <li class="page-item kit-gob"><a class="page-link kit-gob" href="#">1</a></li>
+                      <li class="page-item kit-gob active" aria-current="page">
+                        <span class="page-link kit-gob">2</span>
+                      </li>
+                      <li class="page-item kit-gob"><a class="page-link kit-gob" href="#">3</a></li>
+                      <li class="page-item kit-gob"><a class="page-link kit-gob" href="#">4</a></li>
+                      <li class="page-item kit-gob">
+                        <a class="page-link kit-gob arrows" href="#">
+                            <span class="material-symbols-outlined">
+                                    chevron_right
+                            </span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                <!--PAGINACION-->                             
+                <hr class="my-4 py-4">
+                <!--FORMULARIOS INPUT-->
+                <h1 class="my-4">Formulario INPUTS</h1>
+                <form class="row g-3">
+                    <div class="col-md-4">
+                      <label for="validationServer01" class="form-label kit-gob">Nombre completo:</label>
+                      <input type="text" class="form-control kit-gob" id="validationServer01" value="Mark">
+                      <div class="valid-feedback kit-gob">
+                        Looks good!
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <label for="validationServer02" class="form-label kit-gob">Last name</label>
+                      <input type="text" class="form-control kit-gob is-valid" id="validationServer02" value="Otto" required>
+                      <div class="valid-feedback kit-gob">
+                        Looks good!
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <label for="validationServerUsername" class="form-label">Username</label>
+                      <div class="input-group has-validation">
+                        <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                        <input type="text" class="form-control kit-gob is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+                        <div id="validationServerUsernameFeedback" class="invalid-feedback kit-gob">
+                          Please choose a username.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="validationServer03" class="form-label kit-gob">Ciudad</label>
+                      <input type="text" class="form-control kit-gob is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
+                      <div id="validationServer03Feedback" class="invalid-feedback kit-gob">
+                        Selecciona una ciudad válida
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <label for="validationServer04" class="form-label kit-gob">Región</label>
+                      <select class="form-select kit-gob is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
+                        <option selected disabled value="">Selecciona..</option>
+                        <option>...</option>
+                      </select>
+                      <div id="validationServer04Feedback" class="invalid-feedback kit-gob">
+                        Please select a valid state.
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="validationServer04" class="form-label kit-gob">Comuna</label>
+                        <select class="form-select kit-gob is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
+                          <option selected disabled value="">Selecciona..</option>
+                          <option>...</option>
+                        </select>
+                        <div id="validationServer04Feedback" class="invalid-feedback kit-gob">
+                          Please select a valid state.
+                        </div>
+                      </div>
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
+                        <label class="form-check-label" for="invalidCheck3">
+                          Agree to terms and conditions
+                        </label>
+                        <div id="invalidCheck3Feedback" class="invalid-feedback kit-gob">
+                          You must agree before submitting.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <button class="btn-primary" type="submit">Submit form</button>
+                    </div>
+                </form>
+                <!--FORMULARIOS INPUT-->
+
+               <!--FORMULARIOS TEXTAREA-->
+               <h1 class="my-4">Textarea </h1>
+               <label for="exampleFormControlTextarea1" class="form-label kit-gob">Label Textarea</label>
+               <textarea class="form-control kit-gob" id="exampleFormControlTextarea1" rows="3"></textarea>
+               <!--FORMULARIOS TEXTAREA-->
+
+               <h1 class="my-4">Search bar</h1>
+                <!--FORMULARIO search--->
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control buscador-input" id="floatingInput" placeholder="Buscar....">
+                    <label for="floatingInput">Buscador garantías</label>
+                  </div>
+                 <!--FORMULARIO search--->
+
+                 <h1 class="my-4">Search bar con botón</h1>
+
+                 <div class="row g-3 align-items-center">
+                    <div class="col-lg-8">
+                      <input class="form-control kit-gob form-control-lg" type="text" placeholder="Buscador..." aria-label=".form-control-lg example">
+                    </div>
+                    <div class="col-lg-4">
+                      <button type="submit" class="btn-primary"> 
+                          <span class="material-symbols-outlined align-middle"> search</span> 
+                          Buscar
+                      </button>
+                    </div>
+                 </div>
+
+                <!--FORMULARIO CHECKBOX-->
+                <h1 class="my-4">Formulario CHECKBOX / RADIOS / TOGGLE SWITCH </h1>
+                <div class="form-check">
+                  <input class="form-check-input kit-gob" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label kit-gob" for="flexCheckDefault">
+                   Checkbox por defecto
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input kit-gob" type="checkbox" value="" id="flexCheckChecked" checked>
+                  <label class="form-check-label kit-gob" for="flexCheckChecked">
+                   Checkbox con check
+                  </label>
+                </div>
+                 <!--FORMULARIO CHECKBOX-->
+
+                 <hr>
+                 <!--FORMULARIO RADIO BUTTTON-->
+                 <div class="form-check">
+                    <input class="form-check-input kit-gob" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label kit-gob" for="flexRadioDefault1">
+                    Radio por defecto
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input kit-gob" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <label class="form-check-label kit-gob" for="flexRadioDefault2">
+                      Radio con check
+                    </label>
+                </div>                
+                 <!--FORMULARIO RADIO BUTTTON-->
+                 <hr>
+                  <!--FORMULARIO RADIO TOGGLE / SWITCH-->
+                  <div class="form-check form-switch kit-gob">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                    <label class="form-check-label kit-gob" for="flexSwitchCheckDefault">Switch activo</label>
+                  </div>
+                  <div class="form-check form-switch kit-gob">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                    <label class="form-check-label kit-gob" for="flexSwitchCheckChecked">Switch desactivado</label>
+                  </div>
+                  <!--FORMULARIO RADIO TOGGLE / SWITCH-->
+
+                  <!--TITULOS VERSIÓN DESKTOP Y MOBILE-->
+                  <h1 class="my-4 color-blue">Títulos versión escritorio y celular</h1>
+
+                  <h1> H1 - Título XL Pellentesque molestie consectetur enim. </h1>
+                  <h2> H2 - Título L Pellentesque molestie consectetur enim. </h2>
+                  <h3> H3 - Título M Pellentesque molestie consectetur enim. </h3>
+                  <h4> H4 - Título S Pellentesque molestie consectetur enim. </h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam esse iste itaque libero et at, vero debitis ducimus praesentium, repellat quos voluptatum alias consequatur maiores deserunt dolorum nulla pariatur cupiditate!</p>
+                  <!--TITULOS VERSIÓN DESKTOP Y MOBILE-->
+                  <hr>
+                  <h1 class="my-4 color-blue">Alertas</h1>
+                <!--ALERTA WARNING-->
+                <div class="alert kit-gob alert-warning alert-dismissible d-flex align-items-center fade show" role="alert">
+                    <div class="flex-shrink-0 me-2">
+                    <span class="material-symbols-outlined align-middle color-base-advertencia">
+                        error
+                        </span>
+                    </div>
+                    <div>
+                        <h4>Alerta con título</h4>
+                        <strong>¡Esto es un módulo de alerta!</strong> Con color de advertencia....
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                <!--ALERTA WARNING-->
+
+                <!--ALERTA INFORMACION-->
+                <div class="alert kit-gob alert-primary alert-dismissible d-flex align-items-center fade show" role="alert">
+                    <div class="flex-shrink-0 me-2">
+                      <span class="material-symbols-outlined align-middle color-base-info">
+                        info
+                        </span>
+                     </div>
+                      <div>
+                        <h4>Alerta con título</h4>
+                         <strong>¡Esto es un módulo de alerta!</strong> Con color de información....
+                      </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                  </div>
+                  <!--ALERTA INFORMACION-->
+
+                <!--ALERTA ERROR-->
+                <div class="alert kit-gob alert-danger alert-dismissible d-flex align-items-center fade show" role="alert">
+                    <div class="flex-shrink-0 me-2">
+                        <span class="material-symbols-outlined align-middle color-base-error">
+                          warning
+                          </span>
+                     </div>
+                      <div>
+                        <h4>Alerta con título</h4>
+                         <strong>¡Esto es un módulo de alerta!</strong> Con color de error....
+                      </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                  </div>
+                  <!--ALERTA ERROR-->
+
+                <!--ALERTA EXITO-->
+                <div class="alert kit-gob alert-success alert-dismissible d-flex align-items-center fade show" role="alert">
+                    <div class="flex-shrink-0 me-2">
+                        <span class="material-symbols-outlined align-middle color-base-exito">
+                            check_circle
+                        </span>
+                     </div>
+                      <div>
+                        <h4>Alerta con título</h4>
+                         <strong>¡Esto es un módulo de alerta!</strong> Con color de éxito....
+                      </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                  </div>
+                  <!--ALERTA EXITO-->  
+
+                <h1 class="my-4 color-blue">Modales</h1>
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                 Click acá para ver modal base
+                </button>
+                <!-- Button trigger modal -->
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalInfo">
+                    Click acá para ver modal alerta Informativa
+                </button>
+                <!-- Button trigger modal -->    
+                 
+                <!-- Button trigger modal -->
+                <button type="button" class="btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalWarning">
+                    Click acá para ver modal alerta Advertencia
+                   </button>
+                   <!-- Button trigger modal -->
+  
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalSuccess">
+                    Click acá para ver modal alerta Exitosa
+                   </button>
+                   <!-- Button trigger modal -->
+                    
+              <!-- Modal Ventana boton 1 -->
+              <div class="modal kit-gob fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content kit-gob">
+                    <div class="modal-header">
+                      <h1  class="modal-title m-0" id="exampleModalLabel">Modal title</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      ...
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      <button type="button" class="btn-primary">Guardar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Modal Ventana boton 1 -->                   
+               <!-- Modal Ventana boton información -->
+               <div class="modal kit-gob fade" id="exampleModalInfo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content kit-gob">
+                    <div class="modal-header">
+                      <h1 class="modal-title m-0" id="exampleModalLabel"> 
+                        <span class="material-symbols-outlined align-middle color-base-info-dark-4"> info </span>
+                        Modal title Informativo</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      ...
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      <button type="button" class="btn-primary">Guardar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Modal Ventana boton información -->    
+
+               <!-- Modal Ventana boton warning -->
+               <div class="modal kit-gob fade" id="exampleModalWarning" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content kit-gob">
+                    <div class="modal-header">
+                      <h1 class="modal-title m-0" id="exampleModalLabel"> 
+                        <span class="material-symbols-outlined align-middle color-base-advertencia-dark-4"> cancel </span>
+                        Modal title Alerta/Error</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      ...
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      <button type="button" class="btn-primary">Guardar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             <!-- Modal Ventana boton warning -->
+               <!-- Modal Ventana boton exito -->
+               <div class="modal kit-gob fade" id="exampleModalSuccess" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content kit-gob">
+                    <div class="modal-header">
+                      <h1 class="modal-title m-0" id="exampleModalLabel"> 
+                        <span class="material-symbols-outlined align-middle color-base-exito-dk-3"> check_circle </span> Modal title éxito</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      ...
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      <button type="button" class="btn-primary">Guardar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Modal Ventana boton exito -->       
+
+
+              <h1 class="my-4 color-blue">Cards verdes/rojas</h1>
+                <!--======INICIO CAJAS=========-->
+                <div class="glide-carousel-inicio">
+                    <div class="glide__track" data-glide-el="track">
+                      <ul class="glide__slides">
+                        <!-- Aquí añade tus imágenes o contenido de las diapositivas -->
+                        <li class="glide__slide">
+                            <div class="card-home card-success">
+                                <div class="d-flex flex-row gap-2">
+                                  <div class="card-img-box sucess">
+                                    <img class="color-base-exito" width="24" height="24" src="images/icons/cheque.svg" />
+                                  </div>
+                                  <div> <h2 class="color-base-exito-dk-3">TOTAL</h2></div>
+                                </div>
+                                <p class="py-1">Lorem ipsum dolor sit amet.</p>
+                                <h1 class="m-0">764</h1>
+                            </div>
+                        </li>
+                        <li class="glide__slide">
+                          <div class="card-home card-alert">
+                            <div class="d-flex flex-row gap-2">
+                              <div class="card-img-box warning">
+                                <img class="color-base-warning-dk-3" width="24" height="24" src="images/icons/cheque.svg" />
+                              </div>
+                              <div> <h2 class="color-base-warning-dk-3">TOTAL</h2></div>
+                            </div>
+                            <p class="py-1">Lorem ipsum dolor sit amet. </p>
+                            <h1 class="m-0">764</h1>
+                        </div>
+                        </li>
+                        <li class="glide__slide">
+                          <div class="card-home card-success">
+                              <div class="d-flex flex-row gap-2">
+                                <div class="card-img-box sucess">
+                                  <img class="color-base-exito" width="24" height="24" src="images/icons/cheque.svg" />
+                                </div>
+                                <div> <h2 class="color-base-exito-dk-3">TOTAL</h2></div>
+                              </div>
+                              <p class="py-1">Lorem ipsum dolor sit amet. </p>
+                              <h1 class="m-0">764</h1>
+                          </div>
+                      </li>
+                      <li class="glide__slide">
+                        <div class="card-home card-alert">
+                          <div class="d-flex flex-row gap-2">
+                            <div class="card-img-box warning">
+                              <img class="color-base-warning-dk-3" width="24" height="24" src="images/icons/cheque.svg" />
+                            </div>
+                            <div> <h2 class="color-base-warning-dk-3">TOTAL</h2></div>
+                          </div>
+                          <p class="py-1">Lorem ipsum dolor sit amet. </p>
+                          <h1 class="m-0">764</h1>
+                      </div>
+                      </li>
+                        <!-- Añade más diapositivas según sea necesario -->
+                      </ul>
+  
+                    </div>
+                    
+                  <!-- Controles de navegación -->
+                  <div class="glide__arrows controles-glide-inicio" data-glide-el="controls">
+                    <button class="arrow-link-left" data-glide-dir="<">
+                        <span class="material-symbols-outlined glide-control-style">
+                        arrow_circle_left
+                        </span>
+                    </button>
+                    <button class="arrow-link-right" data-glide-dir=">">
+                        <span class="material-symbols-outlined glide-control-style">
+                            arrow_circle_right
+                            </span>
+                    </button>
+                  </div>
+                  </div>  
+                <!--======FIN CAJAS=========-->
+
+         </div>
+    </div>
+
+
+
+<!--MENU MOBILE -->
+<div id="modal-menu" class="d-none p-4 style-modal-menu ">
+    <div style="position: relative; display: flex; height: inherit; width: inherit;">
+        <div class="box-modal-menu">
+            
+                <p id="close-menumodal"  class="cerrar-modal py-2 m-0 text-center"><i class="bi bi-x-lg"></i> Cerrar</p>
+            
+        <div>
+            <!--BOX MENU-->
+            <div class="box-sidebar">
+              <div class="nav-bar">
+                <div class="nav-content">                   
+                       <button type="button" class="nav-button">
+                          <span class="material-symbols-outlined active">
+                            home </span> 
+                            Inicio 
+                       </button> 
+                       
+                       <button type="button" class="nav-button">
+                        <span class="material-symbols-outlined">
+                          folder_open
+                          </span>
+                          Botón 2 
+                       </button> 
+
+                       <button type="button" class="nav-button">
+                        <span class="material-symbols-outlined">
+                          settings
+                          </span>
+                          Botón 3 
+                       </button> 
+
+                       <button type="button" class="nav-button">
+                        <span class="material-symbols-outlined">
+                          logout
+                          </span>
+                          Cerrar
+                       </button>
+                                                          
+                    <div id="nav-content-highlight"></div>
+                </div>
+              </div>
+
+              </div>
+            <!--BOX MENU-->           
+            </div>
+        </div>
+    </div>
+</div>
+<!--MENU MOBILE -->
+
+
+<!--FOOTER-->
+<footer>
+<div class="container-footer franja-footer">
+    <div class="item-footer">
+        <a href="https://www.economia.gob.cl/" target="_blank"><img src="/Images/logo-MinEconomia_blanco.png" class="m-2 img-fluid" width="160" height="146" alt="Logo Ministerio de Economía, Fomento y Turismo" title="Logo Ministerio de Economía, Fomento y Turismo"></a>
+    </div>
+    <div class="item-footer">
+        <img class="mx-2 my-1" src="/images/logotipo-sello.png" width="200" height="61" alt="Sello">
+        <img class="mx-2 my-1" src="/images/white-sello-de-compromiso-con-la-innovacion.png" width="100" height="100" alt="Sello">
+    </div>
+    <div class="item-footer">
+        <h5>Síguenos en nuestras redes sociales:</h5>
+        <div class="d-flex flex-row gap-20 my-4">
+            <div><a href="https://www.facebook.com/sercotec" target="_blank"> <img src="/images/icons/facebook.svg" width="34" height="34" alt="Sercotec Instagram"></a> </div>
+            <div><a href="https://www.instagram.com/sercotec_cl" target="_blank"> <img src="/images/icons/instagram.svg" width="34" height="34" alt="Sercotec Facebook"></a> </div>
+            <div><a href="https://twitter.com/Sercotec_Chile" target="_blank"> <img src="/images/icons/twitter.svg" width="34" height="34" alt="Sercotec Twitter"></a> </div>
+            <div><a href="https://www.youtube.com/user/CanalSERCOTEC" target="_blank"> <img src="/images/icons/youtube.svg" width="40" height="40" alt="Sercotec Youtube"></a> </div>
+            <div><a href="https://cl.linkedin.com/company/sercotecchile" target="_blank"> <img src="/Images/icons/linkedin.svg" width="34" height="34" alt="Sercotec Linkedin"></a> </div>
+        </div>
+    </div>
+</div>
+</footer>
+<!--FOOTER-->   
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="scripts/funciones.js"></script>
+
+</body>
+</html>
