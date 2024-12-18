@@ -1025,6 +1025,10 @@ textarea.form-control.kit-gob {
   box-shadow: 0 0 0 2px rgba(var(--font-color), 1);
 }
 
+.kit-gob:disabled {
+  border:1px solid rgba(var(--black),0.3);
+}
+
 /*BOOTSTRAP FORMULARIOS*/
 
 
