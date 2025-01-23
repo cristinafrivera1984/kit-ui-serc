@@ -1,0 +1,54 @@
+footer {
+  background: rgba(var(--base-blue-dark-base), 1);
+}
+
+footer .container-footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  margin: 20px auto 0 auto;
+  padding: 40px;
+  max-width: 1280px;
+}
+
+footer .container-footer .item-footer {
+  justify-self: center;
+}
+.container-footer h1 {
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-size: 1.8rem; /*ACÁ HAREMOS UN VAR PARA NORMAR TODOS LOS TAMAÑOS DE LOS H1 H2 ETC*/
+}
+.container-footer h5 {
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-size: 1.1rem; /*ACÁ HAREMOS UN VAR PARA NORMAR TODOS LOS TAMAÑOS DE LOS H1 H2 ETC*/
+  font-weight: 300;
+}
+.container-footer ul.list-footer {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  color: white;
+}
+.container-footer ul.list-footer li {
+  padding: 2px 0;
+  color: black;
+  margin: 0 0 0 18px;
+}
+.container-footer ul.list-footer li a {
+  text-decoration: none;
+  color: black;
+}
+
+.container-footer ul.list-footer li a:hover {
+  text-decoration: underline;
+}
+
+.container-footer.franja-footer {
+  background-image: url("../images/franja.svg");
+  background-repeat: no-repeat;
+  background-position: 150px bottom;
+}

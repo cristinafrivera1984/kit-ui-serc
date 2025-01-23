@@ -1,0 +1,91 @@
+:root {
+  --font-color: 55, 55, 55; /*#373737*/
+  --white: 255, 255, 255;
+  --black: 0, 0, 0;
+  --grey-5: 242, 242, 242;
+  --grey-10: 230, 230, 230;
+  --grey-20: 204, 204, 204;
+  --base-blue: 15, 105, 196; /*#0F69C4*/
+  --base-blue-dark-1: 0, 81, 168; /*Primario darken-1*/
+  --base-blue-dark-3: 0, 38, 115;
+  --base-blue-dark-4: 0, 19, 90;
+  --base-blue-dark-base: 9, 32, 57;
+  --base-blue-light-5: 191, 238, 255;
+  --base-blue-light-4: 161, 210, 255;
+  --base-info: 33, 150, 243;
+  --base-info-dark-4: 13, 71, 161;
+  --base-advertencia: 255, 87, 34;
+  --celeste: 207, 225, 243;
+  --sucess-dark-1: 67, 160, 71;
+  --sucess-dark-3: 46, 125, 50;
+  --sucess-base: 76, 175, 80;
+  --sucess-dark-3: 46, 125, 50;
+  --sucess-light-3: 165, 214, 167;
+  --sucess-light-5: 232, 245, 233;
+  --warning-orange: 249, 113, 69;
+  --warning-dark-3: 216, 67, 21;
+  --warning-dark-4: 190, 10, 31;
+  --warning-light-5: 251, 233, 231;
+  --warning-yellow: 255, 190, 92;
+  --danger-dark: 191, 54, 12;
+  --error-base: 251, 59, 59;
+  --error-dark-3: 205, 30, 44; /*#CD1E2C*/
+  --yellow-focus: 255, 190, 92;
+}
+
+.color-blue {
+  color: rgba(var(--base-blue), 1);
+  filter: ;
+}
+.color-blue-dark-3 {
+  color: rgba(var(--base-blue-dark-3), 1);
+  filter: invert(18%) sepia(91%) saturate(1681%) hue-rotate(200deg)
+    brightness(91%) contrast(109%);
+}
+
+.color-blue-dark-1 {
+  color: rgba(var(--base-blue-dark-1), 1);
+  /*filter: invert(18%) sepia(91%) saturate(1681%) hue-rotate(200deg) brightness(91%) contrast(109%);*/
+}
+
+.color-base-advertencia {
+  color: rgba(var(--base-advertencia, 1));
+}
+
+.color-base-advertencia-dark-4 {
+  color: rgba(var(--warning-dark-4, 1));
+}
+
+.color-base-info {
+  color: rgba(var(--base-info, 1));
+}
+
+.color-base-info-dark-4 {
+  color: rgba(var(--base-info-dark-4, 1));
+}
+
+.color-base-error {
+  color: rgba(var(--error-base, 1));
+}
+
+.color-base-exito {
+  color: rgba(var(--sucess-base, 1));
+  filter: invert(58%) sepia(38%) saturate(671%) hue-rotate(73deg)
+    brightness(92%) contrast(87%);
+}
+
+.color-base-exito-dk-3 {
+  color: rgba(var(--sucess-dark-3, 1));
+}
+
+.color-base-warning-dk-3 {
+  color: rgba(var(--warning-dark-3, 1));
+  filter: invert(32%) sepia(96%) saturate(4698%) hue-rotate(5deg)
+    brightness(95%) contrast(83%);
+}
+
+.color-test {
+  /*border: 1px solid rgba(var(--yellow-focus), 1);*/
+  filter: invert(32%) sepia(87%) saturate(6206%) hue-rotate(200deg)
+    brightness(92%) contrast(88%);
+}

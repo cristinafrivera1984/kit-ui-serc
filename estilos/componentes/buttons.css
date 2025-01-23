@@ -1,0 +1,100 @@
+.btn-primary {
+  width: 100%;
+  margin: 4px 2px;
+  border: none;
+  font-size: 1rem;
+  padding: var(--btn-padding-sm);
+  color: rgba(var(--white), 1);
+  background-color: rgba(var(--base-blue), 1);
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: rgba(var(--base-blue-dark-3), 1);
+}
+
+.btn-primary:active {
+  background-color: rgba(var(--base-blue-dark-4), 1);
+}
+
+.btn-primary:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(var(--yellow-focus), 1);
+}
+
+@media only screen and (min-width: 800px) {
+  /* Desde tablets: */
+  .btn-primary {
+    width: fit-content;
+  }
+}
+
+.btn-secondary {
+  width: 100%;
+  margin: 4px 2px;
+  border: 1px solid rgba(var(--base-blue), 1);
+  color: rgba(var(--base-blue), 1);
+  background-color: transparent;
+  font-size: 1rem;
+  padding: var(--btn-padding-sm);
+}
+
+.btn-secondary:hover {
+  color: rgba(var(--base-blue-dark-3), 1);
+  border: 1px solid rgba(var(--base-blue-dark-3), 1);
+}
+
+.btn-secondary:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(var(--yellow-focus), 1);
+}
+
+.btn-secondary:active {
+  border: 1px solid rgba(var(--base-blue-dark-4), 1);
+  color: rgba(var(--base-blue-dark-4), 1);
+}
+
+@media only screen and (min-width: 800px) {
+  /* Para tablets: */
+  .btn-secondary {
+    width: fit-content;
+  }
+}
+
+.btn-close {
+  opacity: 1 !important;
+}
+
+.chips-main {
+  padding: var(--chips-padding);
+  border-radius: var(--border-radius-chips);
+  cursor: none;
+  font-size: var(--font-size);
+  font-weight: 500;
+}
+
+.chips-main.sucess {
+  background-color: rgba(var(--sucess-dark-3), 1);
+  border: none;
+  color: rgba(var(--white), 1);
+}
+
+.chips-main.warning-orange {
+  background-color: rgba(var(--warning-orange), 1);
+  border: none;
+  color: rgba(var(--font-color), 1);
+}
+
+.chips-main.warning-yellow {
+  background-color: rgba(var(--warning-yellow), 1);
+  border: none;
+  color: rgba(var(--font-color), 1);
+}
+
+.chips-main.danger {
+  background-color: rgba(var(--danger-dark), 1);
+  border: none;
+  color: rgba(var(--white), 1);
+}
+
+/*BOTONES*/

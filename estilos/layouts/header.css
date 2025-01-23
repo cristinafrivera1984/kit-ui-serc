@@ -1,0 +1,34 @@
+/*ESTILOS HEADER*/
+header {
+  width: 100%;
+  background: rgba(var(--white), 1);
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(var(--grey-20), 1);
+}
+
+header h1 {
+  color: rgba(var(--font-color), 1);
+  font-size: var(--font-size-h4);
+  font-weight: 300;
+}
+
+.header-footer-box {
+  align-items: center;
+  align-content: center;
+}
+
+.align-right-header {
+  margin-left: auto !important;
+}
+
+p.p-header {
+  padding: 4px 0;
+  margin: 0;
+}
+
+p.p-header {
+  padding: 4px 0;
+  margin: 0;
+}
+
+/*ESTILOS HEADER*/
