@@ -7,6 +7,7 @@
   --grey-20: 204, 204, 204;
   --base-blue: 15, 105, 196; /*#0F69C4*/
   --base-blue-dark-1: 0, 81, 168; /*Primario darken-1*/
+  --base-blue-dark-2: 0, 59, 141; /*Primario darken-2*/
   --base-blue-dark-3: 0, 38, 115;
   --base-blue-dark-4: 0, 19, 90;
   --base-blue-dark-base: 9, 32, 57;
@@ -30,7 +31,8 @@
   --danger-dark: 191, 54, 12;
   --error-base: 251, 59, 59;
   --error-dark-3: 205, 30, 44; /*#CD1E2C*/
-  --yellow-focus: 255, 190, 92;
+  --yellow-focus: 255, 190, 92; 
+  --link-default: 29, 112, 184; /*#1D70B8*/
 }
 
 .color-blue {

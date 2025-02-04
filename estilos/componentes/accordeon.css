@@ -1,0 +1,51 @@
+@import url('/estilos/base/variables.css');
+@import url('/estilos/base/typography.css');
+@import url('/estilos/base/colors.css');
+@import url('/estilos/base/bootstrap_clases.css');
+@import url('/estilos/utilities/spacing.css');
+@import url('/estilos/componentes/buttons.css');
+
+.box-info-acd {
+
+}
+
+.box-info-acd.box-1 {
+  padding:16px 0 ;
+}
+
+.box-info-acd.with-border {
+  border-bottom: 1px solid rgba(var(--grey-10), 1) !important;
+  padding: 24px 0;
+}
+
+.accordion-body.kit-gob a.link-blue {
+  color: rgba(var(--link-default), 1);
+  text-decoration: underline;
+  font-weight: 700;
+  display: block;
+}
+
+.accordion-body.kit-gob a.link-blue.pb-36 {
+  padding: 0 0 36px 0;
+}
+
+.accordion-body.kit-gob p.title{
+  font-size: var(--font-size-h5);
+}
+
+
+.accordion-body.kit-gob h1{
+  font-family: var(--font-family-sans-slab);
+  font-size: var(--font-size-h2-mob);
+  color: rgba(var(--font-color), 1);
+  line-height: normal;
+  font-weight: 700;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 800px) {
+  .accordion-body.kit-gob h2 {
+    font-size: var(--font-size-h1);
+  }
+}

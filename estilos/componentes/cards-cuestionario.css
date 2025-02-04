@@ -1,3 +1,8 @@
+@import url('/estilos/base/variables.css');
+@import url('/estilos/base/colors.css');
+@import url('/estilos/base/bootstrap_clases.css');
+@import url('/estilos/utilities/spacing.css');
+
 /*CARDS HOME*/
 .card-home {
   padding: var(--padding-cards);
@@ -82,3 +87,36 @@ button.arrow-link-right {
 }
 /*Controles Glide*/
 /*CARDS HOME*/
+
+
+/*CARDS CUESTIONARIO*/
+
+
+@media only screen and (min-width: 800px) {
+  /* Para tablets: */
+  .card-steps{
+    max-width: 260px;
+  }
+}
+
+.card-steps {
+  border: 1px solid rgba(var(--base-blue), 1);
+  padding:24px 12px;
+  border-radius: var(--border-radius-cards);
+}
+.card-steps p {
+  color: rgba(var(--font-color), 1);
+  /*padding: 2px 0;*/
+  margin: 0;
+}
+
+.circle-card {
+  background-color: rgba(var(--base-blue-light-5), 0.4);
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  text-align: center;
+  align-content: center;
+}
+
+/*CARDS CUESTIONARIO*/

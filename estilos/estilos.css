@@ -5,6 +5,10 @@
 @import url('/estilos/componentes/buttons.css');
 @import url('/estilos/componentes/cards.css');
 @import url('/estilos/componentes/form.css');
+@import url('/estilos/componentes/steps.css');
+@import url('/estilos/componentes/convocatorias.css');
+@import url('/estilos/componentes/cards-cdn-cap.css');
+@import url('/estilos/componentes/cards-cuestionario.css');
 @import url('/estilos/layouts/footer.css');
 @import url('/estilos/layouts/grid.css');
 @import url('/estilos/layouts/header.css');
@@ -36,7 +40,7 @@ figure {
 }
 
 .material-symbols-outlined {
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 34;
+  font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 34;
 }
 
 .breadcrumbs {

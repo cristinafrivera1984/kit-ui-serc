@@ -1,0 +1,79 @@
+@import url('/estilos/base/variables.css');
+@import url('/estilos/base/typography.css');
+@import url('/estilos/base/colors.css');
+@import url('/estilos/base/bootstrap_clases.css');
+@import url('/estilos/utilities/spacing.css');
+@import url('/estilos/componentes/buttons.css');
+
+
+.step-container {
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+    margin: 20px auto;
+  }
+  .step-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+ 
+  .step {
+
+  }
+
+  @media (min-width: 800px) {
+    .step  {
+      font-size: var(--font-size-h5);
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+  }
+
+
+  .step-circle {
+    width: 48px;
+    height: 48px;
+    border: 4px solid rgba(var(--base-blue), 1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color:rgba(var(--base-blue), 1);
+  }
+  .step-line {
+    width: 96px;
+    height: 4px;
+    background-color: rgba(var(--base-blue), 1);
+    position: absolute;
+    right: -96px;
+    top: 21px;
+  }
+  .active .step-circle {
+    background-color:  rgba(var(--base-blue), 1);
+    color: white;
+    width: 48px;
+    height: 48px;
+
+  }
+  .check-icon {
+    color: white;
+  }
+  .step-content {
+    margin: 20px 0;
+    max-width: 800px;
+    justify-content: center;
+    display: flex;
+
+  }
+  .button-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+ 
+  button:disabled {
+    background-color: #ddd;
+  }

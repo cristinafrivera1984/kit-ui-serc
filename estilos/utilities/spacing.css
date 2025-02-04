@@ -1,3 +1,12 @@
+:root {
+--padding-24:24px;
+--margin-modules-y: 6px; 
+--padding-cards: 24px;
+--padding-a-12-t: 0 0 12px 0;
+--padding-bd-acd:36px 24px;
+}
+
+
 .gap-20 {
   gap: 20px;
 }
@@ -8,4 +17,11 @@
 
 .margin-btw-titles {
   margin: 60px 0;
+}
+
+
+.p-tooltip-card {
+  position: absolute;
+  right: 10px;
+  top: 10px;
 }

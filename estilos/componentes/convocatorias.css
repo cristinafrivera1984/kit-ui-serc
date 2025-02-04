@@ -1,0 +1,52 @@
+@import url('/estilos/base/variables.css');
+@import url('/estilos/base/typography.css');
+@import url('/estilos/base/colors.css');
+@import url('/estilos/base/bootstrap_clases.css');
+@import url('/estilos/utilities/spacing.css');
+@import url('/estilos/componentes/buttons.css');
+
+/*TAB INICIO POSTULACIONES*/
+
+@media only screen and (min-width: 800px) {
+  /* Desde tablets: */
+  .box-item-postulaciones {
+    gap: 30px;
+  }
+}
+
+.box-item-postulaciones {
+  background-color: white;
+  border-left: 12px solid rgba(var(--base-blue), 1);
+  border-top:1px solid rgba(var(--base-blue), 1);
+  border-bottom:1px solid rgba(var(--base-blue), 1);
+  border-right:1px solid rgba(var(--base-blue), 1);
+  border-top-right-radius: var(--border-radius-cards);
+  border-bottom-right-radius: var(--border-radius-cards);
+  padding: var(--padding-24);
+  margin: var(--padding-cards);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 0 20px 0;
+}
+.box-item-postulaciones a {
+  color:var(--font-color);
+  text-decoration: none;
+  padding: var(--padding-a-12-t);
+  display: block;
+  font-weight: 700;
+}
+
+.box-item-postulaciones a:hover {
+  color:var(--font-color);
+  text-decoration: underline;
+}
+
+.box-item-postulaciones p {
+  padding: 0 0.4rem 0 0.2rem ;
+}
+
+/*TAB INICIO POSTULACIONES*/
+

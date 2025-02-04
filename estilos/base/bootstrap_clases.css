@@ -236,4 +236,38 @@ textarea.form-control.kit-gob {
 
 /*BOOTSTRAP MODAL*/
 
-/*BOOTSTRAP*/
+/*BOOTSTRAP ACCORDEON*/
+button.accordion-button.kit-gob {
+  background-color: rgba(var(--grey-10), 1);
+  font-size: var(--font-size-h5);
+  color: rgba(var(--font-color), 1);
+  font-weight: 700;
+  font-family: var(--font-family-sans-s);
+  border-radius: 0!important;
+}
+
+.accordion.kit-gob {
+  border:1px solid rgba(var(--grey-10), 1) ;
+  border-radius: 0!important;
+}
+.accordion-item.kit-gob {
+  border-top: none!important;
+  border-radius: 0;
+  border-bottom:1px solid white;
+}
+
+.accordion-item:last-of-type {
+  border-radius: 0!important;
+  border-bottom: none!important;
+}
+
+.accordion-body.kit-gob {
+  padding:var(--padding-24);
+  font-family: var(--font-family-sans-s);
+  color: rgba(var(--font-color), 1);
+}
+
+
+
+
+/*BOOTSTRAP ACCORDEON*/

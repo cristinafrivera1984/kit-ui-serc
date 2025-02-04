@@ -1,8 +1,7 @@
 :root {
   --border-radius-1: 14px;
   --border-radius-chips: 24px;
-  --btn-padding-sm: 10px 16px;
+  --border-radius-cards: 10px;
+  --btn-padding-sm: 8px 20px;
   --chips-padding: 4px 10px;
-  --padding-cards: 24px;
-  --test: 12px;
 }
