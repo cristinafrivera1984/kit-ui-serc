@@ -63,7 +63,7 @@
     color: white;
   }
   .step-content {
-    margin: 20px 0;
+    margin: 20px auto;
     max-width: 800px;
     justify-content: center;
     display: flex;
@@ -71,7 +71,8 @@
   }
   .button-wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    margin: 20px auto;
   }
  
   button:disabled {

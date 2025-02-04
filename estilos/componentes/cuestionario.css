@@ -4,8 +4,8 @@
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    gap: 16px; /* Espacio entre cajas */
-    justify-content: center; /* Centra los elementos en caso de que haya menos de 2 */
+    gap: 16px; 
+    justify-content: center;
   }
 
 .container-card-2 {
@@ -14,17 +14,17 @@
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    gap: 16px; /* Espacio entre cajas */
-    justify-content: center; /* Centra los elementos en caso de que haya menos de 2 */
+    gap: 16px; 
+    justify-content: center; 
   }
   .box {
     max-width: 320px;
-    width: calc(50% - 8px); /* Ajusta al 50% con espacio entre columnas */
+    width: calc(34% - 8px); /* Ajusta al 50% con espacio entre columnas */
   }
 
   .box-2 {
     max-width: 320px;
-    width: calc(53.333% - 10.67px); /* 3 columnas con espacio entre ellas */
+  /*  width: calc(53.333% - 10.67px);  3 columnas con espacio entre ellas */
   }
   
   /* Para pantallas más pequeñas, las cajas ocuparán el 100% */

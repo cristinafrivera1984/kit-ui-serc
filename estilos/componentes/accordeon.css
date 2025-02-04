@@ -13,6 +13,10 @@
   padding:16px 0 ;
 }
 
+.box-info-acd.box-1 p {
+  padding-bottom: 8px ;
+}
+
 .box-info-acd.with-border {
   border-bottom: 1px solid rgba(var(--grey-10), 1) !important;
   padding: 24px 0;
