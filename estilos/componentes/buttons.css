@@ -3,9 +3,9 @@
 @import url('/estilos/base/typography.css');
 @import url('/estilos/utilities/spacing.css');
 
-.btn-primary {
+.btn-primary, a.btn-primary{
   width: 100%;
-  margin: 4px 2px;
+  margin: 0px 2px;
   border: none;
   font-size: 1rem;
   padding: var(--btn-padding-sm);
@@ -13,6 +13,8 @@
   background-color: rgba(var(--base-blue-dark-1), 1);
   transition: 0.3s;
 }
+
+
 
 .btn-primary:hover {
   background-color: rgba(var(--base-blue-dark-3), 1);
@@ -115,15 +117,16 @@
 /*BOTONES*/
 
 
-.btn-primary-dk-blue {
+.btn-primary-dk-blue, a.btn-primary-dk-blue {
   width: 100%;
   margin: 4px 2px;
   border: none;
   font-size: 1rem;
   padding: var(--btn-padding-sm);
-  color: rgba(var(--white), 1);
+  color: rgba(var(--white), 1)!important;
   background-color: rgba(var(--base-blue-dark-2), 1);
   transition: 0.3s;
+  text-align: center;
 }
 
 .btn-primary-dk-blue:hover {
@@ -153,11 +156,11 @@ button.btn-number-conv {
   background-color: rgba(var(--sucess-light-5), 1);
   padding: var(--btn-padding-sm);
   border-radius: var(--border-radius-chips);
-  font-size: var(--font-size-small);
+  font-size: 1rem;
   font-weight: 700;
   border:none;
   color: rgba(var(--font-color), 1);
-  margin: 0 0 24px 0;
+  margin: 12px 0 16px 0;
 }
 
 @media only screen and (min-width: 576px) {
@@ -174,7 +177,7 @@ button.btn-number-conv span.number-conv {
   background-color: rgba(var(--sucess-dark-3), 1);
   font-weight: bold;
   position: absolute;
-  left: 159px;
+  right: -10px;
   bottom: 15px;
   font-size: 14px;
   width: 26px;
@@ -194,3 +197,6 @@ button.btn-number-conv span.number-conv {
 }
 
 /*CAJA PARA BOTONES WIDTH MOBILE*/
+
+
+

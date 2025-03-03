@@ -1,0 +1,374 @@
+html {
+    box-sizing:border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    background-color: #fff!important;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+}
+
+body > footer {
+position: sticky;
+top: 100vh;
+    }  
+
+
+
+:root {
+--font-color:57, 57, 57;
+--padding-btn: 0.3rem 1.8rem;
+--blue:15, 105, 180;
+--dark-blue: 23, 50, 119;
+--acento: 33, 90, 206;
+--celeste: 60, 185, 247;
+--red: 232, 56, 95;
+--gris:247, 247, 247;
+--font-family-titles:  "Roboto Slab", serif;
+--font-family-main: "Roboto", sans-serif;
+--font-size-p:1rem;
+--font-size-h1: 2rem;
+--font-size-small:0.8rem;
+--border-radius-btn:40px;
+--border-main-btn:none;
+--padding-boxes: 14px 14px;
+--padding-p:10px 0;
+--margin-btn: 6px 0;
+--border-radius-button-main: 40px;
+--padding-button-main: 8px 10px;
+}        
+
+
+/*HEADING*/
+
+h1, h2, h3, h4 {
+    font-family: var(--font-family-main);
+}
+
+h1 {
+    font-size: var(--font-size-h1);
+    color: var(--font-color);
+    font-weight: 700;
+}
+
+/*BOTONES*/
+
+
+.button-main {
+    border-radius: var(--border-radius-button-main);
+    padding: var(--padding-button-main);
+    transition-duration: 0.4s;
+    width: fit-content;
+    border: none;
+    font-size: 1rem;
+    margin: 0 4px;
+}
+
+button.ver-mas {
+    background-color: transparent;
+    border:1px solid transparent;
+    text-decoration: none;
+    transition: border 0.3s ease;
+    padding: var(--padding-button-main);
+    border-radius: var(--border-radius-btn);
+
+
+}
+
+button.ver-mas:hover  {
+    border:1px solid rgba(var(--dark-blue), 1);
+    color: rgba(var(--blue), 1);
+    border-radius: var(--border-radius-btn);
+}
+
+button.ver-mas:active{
+    border:1px solid rgba(var(--blue), 1);
+    color: rgba(var(--blue), 1);
+    border-radius: var(--border-radius-btn); 
+}
+
+button.ver-mas:visited{
+    border:1px solid rgba(var(--red), 1);
+    color: rgba(var(--blue), 1);
+    border-radius: var(--border-radius-btn); 
+}
+
+button.btn-blue_01 {
+    background-color: var(--blue);
+    color: #fff;
+    font-size: var(--font-size-p);
+    border-radius: var(--border-radius-btn);
+    padding: var(--padding-btn);
+    border: var(--border-main-btn);
+    position: relative;
+    margin: var(--margin-btn);
+}
+
+button.btn-blue_01::after {
+    content: ''; /* Agrega contenido al pseudo-elemento */
+    position: absolute; /* Posiciona el pseudo-elemento absolutamente */
+    left: 14px; /* Ajusta la posición del pseudo-elemento */
+    bottom: 5px; /* Ajusta la posición del pseudo-elemento */
+    width: 73%; /* Ancho completo */
+    height: 1px; /* Grosor del subrayado */
+    background-color: transparent; /* Color del subrayado (transparente por defecto) */
+    transition:  0.3s; /* Transición suave del color del subrayado */
+}
+
+button.btn-blue_01:hover::after {
+    background-color: var(--yellow); /* Cambia el color del subrayado al hacer hover */
+}
+
+
+
+button.btn-blue_02 {
+    background-color:rgba(var(--dark-blue), 1);
+    color: #fff;
+    font-size: var(--font-size-p);
+    border-radius: var(--border-radius-btn);
+    padding: var(--padding-btn);
+    border: var(--border-main-btn);
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: 89% 50%;
+    background-size: 10px 10px;  
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;  
+}
+
+
+button.btn-blue_02:hover {
+    background-color: rgba(var(--blue), 1);
+    background-image: url(images/icon_arrow_btn_postular.svg);
+    background-repeat: no-repeat;
+    background-position: 89% 50%;
+    background-size: 10px 10px;
+    color: white;       
+    transition: all 0.35s;
+
+}
+
+
+button.btn-blue_03 {
+    background-color: white;
+    color: var(--font-color);
+    font-size: var(--font-size-p);
+    border-radius: var(--border-radius-btn);
+    padding: var(--padding-btn);
+    border: 1px solid var(--font-color);
+    position: relative;
+
+}
+button.btn-blue_03:hover {
+    background-color:var(--gris);
+    color: var(--font-color);
+}
+
+/*button.btn-blue_02::after {
+    content: "";
+    background: var(--yellow);  color de fondo hover 
+    position: absolute;
+    z-index: -1;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    right: -100%;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+
+}
+button.btn-blue_02:hover::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+    
+  }*/
+
+
+    
+/*BOTONES*/
+
+
+
+/*TAB INICIO*/
+
+.nav-tabs .nav-link {
+    border-radius: 0!important;
+    border: none!important;
+}
+
+
+.tab-content.tab-container {
+padding: 1.8rem 0;
+max-width: 1280px;
+margin: 0 auto;
+background-color:var(--gris);
+}
+
+ul.nav.nav-tabs.module-tabs-inicio{
+list-style: none;
+padding: 0;
+margin: 0;
+display: flex;
+justify-content: center; /* Centra horizontalmente los elementos */
+background-color:rgba(var(--blue), 0.1) ;
+border: 1pz solid rgba(var(--blue), 0.1) ;
+border-radius:40px!important;
+
+
+}
+
+
+.nav-tabs .nav-link.module-tabs-inicio  {
+color: rgba(var(--font-color), 1);
+font-size: 1.2rem;
+padding: 10px 38px;
+/*background-color: rgba(var(--blue), 0.2);*/
+border-radius: 40px!important;
+
+}
+
+.tab-inicio-w100{
+    background-color: var(--gris);
+    width: 100%;
+}
+
+li.nav-item  {
+
+    border-radius: 40px;
+
+}
+.nav-tabs .nav-link.module-tabs-inicio.active  {
+    background-color:rgba(var(--blue), 1);
+    color: white;
+    font-size: 1.2rem;
+    font-family: var(--font-family-main);
+    border-radius: 40px;
+
+}
+
+/*TAB INICIO ASESORIA CDN*/
+.container-boxes-cdn {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(
+            300px,
+            1fr
+        )
+    );
+    gap: 20px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.container-boxes-cdn .box-item-cdn {
+    background-color: rgba(var(--gris), 1);
+    border-radius: 5px;
+    padding: var(--padding-boxes);
+}
+
+.container-boxes-cdn .box-item-cdn p {
+    padding: 0;
+    margin: 0 0 0 10px;
+    font-size: 1rem;
+    color: var(--font-color);
+}
+
+.container-boxes-cdn .box-item-cdn h2 {
+    padding: 0;
+    margin: 0 0 0 10px;
+    font-size: 1.1rem;
+    font-family: var(--font-family-main);
+    color: var(--font-color);
+    font-weight: 500;
+    word-break: break-word;
+}
+
+/*TAB INICIO ASESORIA CDN*/
+
+/*TAB INICIO POSTULACIONES*/
+
+.box-item-postulaciones {
+    background-color: rgba(var(--gris), 1);
+    border-left: 12px solid rgba(var(--blue), 1);
+    border-top-left-radius:14px;
+    border-bottom-left-radius:14px;
+    padding: var(--padding-boxes);
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 0 20px 0;
+}
+.box-item-postulaciones a {
+    color:var(--font-color);
+    text-decoration: none;
+    padding: var(--padding-p);
+    display: block;
+    font-weight: 700;
+}
+
+.box-item-postulaciones a:hover {
+    color:var(--font-color);
+    text-decoration: underline;
+}
+
+.box-item-postulaciones p {
+    padding: 0 0.4rem 0 0.2rem ;
+}
+
+/*TAB INICIO POSTULACIONES*/
+
+
+.container-titulo {
+    margin:28px 30px;
+    display: flex;
+    gap: 20px;
+    align-content: center;
+    justify-content: center;
+}
+
+.form-switch .form-check-input {
+    height: 24px;
+    width: 48px;
+}
+.form-switch .form-check-input:focus {
+    border-color: rgba(0, 0, 0, 0.25);
+    outline: 0;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba(102,102,102,1)'/></svg>");
+}
+.form-switch .form-check-input:checked {
+    background-color: var(--yellow);
+    border-color: var(--yellow);
+    border: none;
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba(255,255,255,1.0)'/></svg>");
+}
+
+
+
+/*ICONOS GOOGLE*/
+ 
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 200,
+  'GRAD' 0,
+  'opsz' 24
+}
+ 
+/*ICONOS GOOGLE*/
+

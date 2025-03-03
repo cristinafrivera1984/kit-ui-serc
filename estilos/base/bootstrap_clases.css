@@ -265,6 +265,7 @@ button.accordion-button.kit-gob {
   padding:var(--padding-24);
   font-family: var(--font-family-sans-s);
   color: rgba(var(--font-color), 1);
+  text-align: left;
 }
 
 
