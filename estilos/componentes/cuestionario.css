@@ -104,3 +104,11 @@
       display: none;
     }
   }
+
+  /* If screen size is 800px wide*/
+  @media (max-width: 800px) {
+    .min-w-mobile{
+      min-width: 322px!important;
+    }
+  }
+

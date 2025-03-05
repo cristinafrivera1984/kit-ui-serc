@@ -8,7 +8,9 @@ class CuestionarioProgramas extends HTMLElement {
             <p><strong>${this.nombreprograma}:</strong> ${this.infoprograma}</p>
             <div class="d-flex flex-md-row flex-column justify-content-between gap-2">
                 <a class="link-blue" href="${this.linkinfo}" title="Acá va el link de parametro de la region">Más información</a>
-                <button class="btn-number-conv" style="position: relative;">Postulaciones abiertas <span class="number-conv">5</span></button>
+                <button class="btn-number-conv" style="position: relative;">Postulaciones abiertas <span class="number-conv">5</span>
+                </button>
+                <button class="btn-gray-10">Postulaciones cerradas </button>
             </div>
         </div>`;
     }

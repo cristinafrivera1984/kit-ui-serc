@@ -20,7 +20,7 @@
   padding:0px;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 801px) {
   /* Para tablets: */
   .card-steps{
     border: 1px solid rgba(var(--base-blue), 1);;
@@ -40,7 +40,7 @@
 .circle-card img{
 display: none;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 801px) {
   /* Para tablets: */
   .circle-card img{
     display: flex;
@@ -51,7 +51,7 @@ display: none;
 .circle-card{
   display: none;
   }
-  @media only screen and (min-width: 800px) {
+  @media only screen and (min-width: 801px) {
     /* Para tablets: */
     .circle-card {
       display: flex !important;

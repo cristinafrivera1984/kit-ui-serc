@@ -170,6 +170,27 @@ button.btn-number-conv {
   }
 }
 
+button.btn-gray-10 {
+  width: 100%;
+  background-color: rgba(var(--grey-10), 1);
+  padding: var(--btn-padding-sm);
+  border-radius: var(--border-radius-chips);
+  font-size: 1rem;
+  font-weight: 700;
+  border:none;
+  color: rgba(var(--font-color), 1);
+  margin: 12px 0 16px 0;
+  pointer-events: none;
+}
+
+@media only screen and (min-width: 576px) {
+  /* Desde tablets: */
+  button.btn-gray-10{
+    width: fit-content;
+  }
+}
+
+
 
 button.btn-number-conv span.number-conv {
   color: white;

@@ -10,7 +10,7 @@ class CardRadioButton extends HTMLElement {
     <div class="circle-card">
         <img src="${this.icon}" width="${this.widthicon}" height="${this.heighticon}">
     </div>   
-    <div class="d-flex flex-row form-check">
+    <div class="d-flex flex-row form-check min-w-mobile">
         <div class="mt-3 me-1">
             <input class="form-check-input kit-gob" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
         </div>
