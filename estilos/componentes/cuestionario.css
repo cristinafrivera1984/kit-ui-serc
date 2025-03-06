@@ -24,7 +24,23 @@
   .container-titles h1 {
     font-size:var(--font-size-h4);
   }
-} 
+}
+
+.cuestionario-container-mob h1 {
+  color: rgba(var(--font-color), 1);
+  font-family: var(--font-family-sans-slab);
+  font-size:var(--font-size-h4-mob) ;
+  display: block;
+  padding: 0 0 1rem 0;
+  text-align: center;  
+}
+
+
+@media (min-width:768px) {
+  .cuestionario-container-mob h1{
+    font-size:var(--font-size-h4);
+  }
+}
 
 .container-card-1 {
   max-width: 1000px;
