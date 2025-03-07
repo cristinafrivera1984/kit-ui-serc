@@ -88,38 +88,27 @@
   /*PROGRESS BAR CIRCULAR*/
 
 
-/* If screen size is 800px wide, or less, display block */
-  @media (max-width: 800px) {
-    .cuestionario-container-mob{
-      display:block;
-      background-color: white;
-      margin: 0 0.8rem;
-      text-align: center;
-    }
-  }
-
-
-/* If screen size is more than 801px wide,  display none */
-@media (min-width: 801px) {
-    .cuestionario-container-mob{
-      display:none;
-    }
-  }
-
-/* If screen size is more than 801px wide,  display none */
-@media (min-width: 800px) {
-  .cuestionario-container-escritorio{
+  .cuestionario-container-escritorio {
     display:block;
-    background-color: palevioletred;
+  }
+
+  .cuestionario-container-mob{
+    display:none;
+  }
+
+  /* Cuando la pantalla sea menor o igual a 768px */
+@media screen and (max-width: 768px) {
+  .cuestionario-container-escritorio {
+    display: none;
+  }
+  .cuestionario-container-mob {
+    display: block;
+    background-color: white;
+    margin: 0 0.8rem;
+    text-align: center;
   }
 }
 
-/* If screen size is 800px wide, or less, display block */
-  @media (max-width: 800px) {
-    .cuestionario-container-escritorio{
-      display: none;
-    }
-  }
 
   /* If screen size is 800px wide*/
   @media (max-width: 800px) {

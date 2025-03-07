@@ -6,7 +6,7 @@ class CardRadioButtonTool extends HTMLElement {
         this.widthicon = this.getAttribute('width') ?? "30";
         this.heighticon = this.getAttribute('height') ?? "30";
         this.tooltext = this.getAttribute('tooltext') ?? "Lorem ipsum";
-        this.innerHTML = /*html*/ `<div class="card-steps d-flex flex-column align-items-md-center align-items-lg-center position-relative">
+        this.innerHTML = /*html*/ `<div class="card-steps d-flex flex-column align-items-md-center align-items-start position-relative">
             <div class="circle-card">
                 <img src="${this.icon}" width="${this.widthicon}" height="${this.heighticon}">
             </div>

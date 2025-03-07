@@ -10,7 +10,7 @@ class CuestionarioProgramas extends HTMLElement {
                 <a class="link-blue" href="${this.linkinfo}" title="Acá va el link de parametro de la region">Más información</a>
                 <button class="btn-number-conv" style="position: relative;">Postulaciones abiertas <span class="number-conv">5</span>
                 </button>
-                <button class="btn-gray-10">Postulaciones cerradas </button>
+                <p class="fw-bold">No hay postulaciones disponibles </p>
             </div>
         </div>`;
     }
