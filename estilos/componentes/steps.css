@@ -9,7 +9,7 @@
 .step-container {
     display: flex;
     flex-direction: column;
-    width: 480px;
+    width: 560px;
     margin: 20px auto;
   }
   .step-wrapper {
@@ -20,15 +20,15 @@
   }
  
   .step {
-
+    position: relative;
   }
 
-  @media (min-width: 800px) {
+  @media (min-width: 768px) {
     .step  {
       font-size: var(--font-size-h5);
-      display: flex;
-      align-items: center;
-      position: relative;
+     /* display: flex;
+      align-items: center;*/
+  
     }
   }
 
@@ -46,11 +46,11 @@
     color:rgba(var(--base-blue), 1);
   }
   .step-line {
-    width: 96px;
+    width: 126px;
     height: 4px;
     background-color: rgba(var(--base-blue), 1);
     position: absolute;
-    right: -96px;
+    right: -123px;
     top: 21px;
   }
   .active .step-circle {

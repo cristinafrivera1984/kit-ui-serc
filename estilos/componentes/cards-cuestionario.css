@@ -15,20 +15,6 @@
 }
 
 
-.card-steps {
-  border:none;
-  padding:0px;
-}
-
-@media only screen and (min-width: 768px) {
-  /* Para tablets: */
-  .card-steps{
-    border: 1px solid rgba(var(--base-blue), 1);;
-    padding:24px 12px;
-    border-radius: var(--border-radius-cards);
-    text-align: left;
-  }
-}
 
 .card-steps p {
   color: rgba(var(--font-color), 1);
@@ -37,23 +23,32 @@
 }
 
 
-.circle-card img{
-display: none;
-}
-@media only screen and (min-width: 768px) {
-  /* Para tablets: */
-  .circle-card img{
-    display: flex;
-  }
+
+.card-steps{
+  border:none;
+  padding:0px;
 }
 
-
-.circle-card{
-  display: none;
+/* A partir del 768, 769, 770 etc pasa este cambio */
+  @media screen and (min-width: 768px) {
+    .card-steps {
+      border: 1px solid rgba(var(--base-blue), 1);;
+      padding:24px 12px;
+      border-radius: var(--border-radius-cards);
+      text-align: left;
+      margin: 1rem 0;
+    }
   }
-  @media only screen and (min-width: 768px) {
-    /* Para tablets: */
-    .circle-card {
+
+
+   .card-steps  .circle-card {
+    display: none!important;
+
+    }
+  
+/* A partir del 768, 769, 770 etc pasa este cambio */
+  @media screen and (min-width: 768px) {
+    .card-steps .circle-card {
       display: flex !important;
       background-color:rgba(var(--base-blue-light-5), 0.3);
       /*padding: 12px;*/
@@ -66,4 +61,18 @@ display: none;
     }
   }
 
+
+  .card-steps .circle-card img {
+    display: none!important;
+     }
+
+
+/* A partir del 768, 769, 770 etc pasa este cambio */
+  @media screen and (min-width: 768px) {
+    .card-steps .circle-card img {
+      display: block!important;
+  
+       }
+     }
+     
 /*CARDS CUESTIONARIO*/
