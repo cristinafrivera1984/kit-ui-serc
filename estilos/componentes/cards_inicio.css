@@ -4,7 +4,7 @@
 @import url('/estilos/utilities/spacing.css');
 
 
-/*CARDS HOME*/
+/*CARDS HOME GLIDE*/
 .card-home {
     padding: var(--padding-cards);
     border-radius: var(--border-radius-1);
@@ -87,4 +87,6 @@
     color: rgba(var(--font-color), 0.7);
   }
   /*Controles Glide*/
-  /*CARDS HOME*/
+/*CARDS HOME GLIDE*/
+
+
