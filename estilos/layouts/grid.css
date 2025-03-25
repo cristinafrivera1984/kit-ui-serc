@@ -27,3 +27,15 @@
     width: 100%;
   }
 }
+
+.container-wordpress {
+  padding: 0 1rem;
+  margin: 2.4rem 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .container-wordpress{
+    margin: 2.4rem auto;
+    max-width: 1140px;
+  }
+}

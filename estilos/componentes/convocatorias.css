@@ -7,13 +7,6 @@
 
 /*TAB INICIO POSTULACIONES*/
 
-@media only screen and (min-width: 800px) {
-  /* Desde tablets: */
-  .box-item-postulaciones {
-    gap: 30px;
-  }
-}
-
 .box-item-postulaciones {
   background-color: white;
   border-left: 12px solid rgba(var(--base-blue), 1);
@@ -23,14 +16,28 @@
   border-top-right-radius: var(--border-radius-cards);
   border-bottom-right-radius: var(--border-radius-cards);
   padding: var(--padding-24);
-  margin: var(--padding-cards);
-  display: flex;
+ /* display: flex;
+  flex-direction: column;
   gap: 10px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between;*/
   flex-wrap: wrap;
-  margin: 0 0 20px 0;
+  margin: 0 0 24px 0;
 }
+
+@media only screen and (min-width: 768px) {
+  /* Desde tablets: */
+  .box-item-postulaciones {
+    align-items: center;
+    justify-content: space-between;
+   /* gap: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;*/
+  }
+}
+
+
 .box-item-postulaciones a {
   color:var(--font-color);
   text-decoration: none;

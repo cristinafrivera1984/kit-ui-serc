@@ -14,8 +14,6 @@
   transition: 0.3s;
 }
 
-
-
 .btn-primary:hover {
   background-color: rgba(var(--base-blue-dark-3), 1);
 }
@@ -104,8 +102,6 @@
   color: rgba(var(--white), 1);
 }
 
-
-
 .chips-main.card-cdn {
   background-color:white;
   border: 1px solid rgba(var(--base-blue), 1);
@@ -116,7 +112,12 @@
 
 /*BOTONES*/
 
-
+@media only screen and (min-width: 576px) {
+  /* Desde tablets: */
+  .btn-primary-dk-blue{
+    width: fit-content;
+  }
+}
 .btn-primary-dk-blue, a.btn-primary-dk-blue {
   width: 100%;
   margin: 4px 2px;
@@ -142,12 +143,7 @@
   box-shadow: 0 0 0 3px rgba(var(--yellow-focus), 1);
 }
 
-@media only screen and (min-width: 576px) {
-  /* Desde tablets: */
-  .btn-primary-dk-blue{
-    width: fit-content;
-  }
-}
+
 
 /*BOTONES CON NÚMERO DE POSTULACIONES EN CUESTIONARIO*/
 
@@ -221,3 +217,39 @@ button.btn-number-conv span.number-conv {
 
 
 
+.btn-red-acento, a.btn-red-acento {
+  width: 100%;
+  margin: 0px 2px;
+  border: none;
+  font-size:1.125rem;
+  padding: var(--btn-padding-sm);
+  color: rgba(var(--white), 1);
+  background-color: rgba(var(--acento-red-dark-2), 1);
+  transition: 0.3s;
+  text-decoration: none;
+  line-height: 1.5;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.btn-red-acento:hover {
+  background-color: rgba(var(--acento-red-dark-3), 1);
+  text-decoration: underline;
+}
+
+.btn-red-acento:active {
+  background-color: rgba(var( --acento-red-dark-4), 1);
+}
+
+.btn-red-acento:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(var(--yellow-focus), 1);
+}
+
+
+@media only screen and (min-width: 576px) {
+  /* Desde 576px: */
+  .btn-red-acento, a.btn-red-acento {
+    width:  auto;
+  }
+}

@@ -6,10 +6,10 @@ class CardConvocatorias extends HTMLElement {
         this.cierreconvocatoria = this.getAttribute('cierreconvocatoria') ?? "12/12/2026";
         this.region = this.getAttribute('region') ?? "Arica y Parinacota";
         this.urlpostula = this.getAttribute('urlpostula') ?? "#";
-        this.innerHTML = /*html*/ `<div class="box-item-postulaciones">
-            <div>
+        this.innerHTML = /*html*/ `<div class="box-item-postulaciones row">
+            <div class="col-md-10">
                 <a href="${this.urlpostula}">${this.tituloconvocatoria}</a>
-                <div class="d-flex flex-sm-row flex-column">
+                <div class="d-flex flex-sm-row flex-column mb-2">
                     <div class="me-4 me-4 my-1">
                         <span class="material-symbols-outlined align-bottom"> calendar_month </span>
                         <p class="d-inline"><strong>Inicio:</strong> ${this.inicioconvocatoria} </p>
@@ -24,8 +24,8 @@ class CardConvocatorias extends HTMLElement {
                     </div>
                 </div>
             </div>
-            <div class="box-button">
-                <a class="btn-primary-dk-blue rounded-pill" href="${this.urlpostula}">Postular</a>
+            <div class="col-md-2 box-button">
+                <a class="btn-primary-dk-blue rounded-pill" role="button" aria-label="Postular" title="Postular" href="${this.urlpostula}">Postular</a>
             </div>
         </div>`;
 
