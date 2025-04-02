@@ -7,25 +7,25 @@ class CardConvocatorias extends HTMLElement {
         this.region = this.getAttribute('region') ?? "Arica y Parinacota";
         this.urlpostula = this.getAttribute('urlpostula') ?? "#";
         this.innerHTML = /*html*/ `<div class="box-item-postulaciones row">
-            <div class="col-md-10">
+            <div class="col-md-9">
                 <a href="${this.urlpostula}">${this.tituloconvocatoria}</a>
                 <div class="d-flex flex-sm-row flex-column mb-2">
-                    <div class="me-4 me-4 my-1">
+                    <div class="me-2 my-1">
                         <span class="material-symbols-outlined align-bottom"> calendar_month </span>
                         <p class="d-inline"><strong>Inicio:</strong> ${this.inicioconvocatoria} </p>
                     </div>
-                    <div class="me-4 me-4 my-1">
+                    <div class="me-2 my-1">
                         <span class="material-symbols-outlined align-bottom"> calendar_month </span>
                         <p class="d-inline"> <strong>Cierre:</strong> ${this.cierreconvocatoria} </p>
                     </div>
-                    <div class="me-4 me-4 my-1">
+                    <div class="me-2 my-1">
                         <span class="material-symbols-outlined align-bottom"> location_on </span>
                         <p class="d-inline">${this.region}</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-2 box-button">
-                <a class="btn-primary-dk-blue rounded-pill" role="button" aria-label="Postular" title="Postular" href="${this.urlpostula}">Postular</a>
+            <div class="col-md-auto box-button">
+                <a class="btn-primary-dk-blue rounded-pill" role="button" aria-label="Más información" title="Más información" href="${this.urlpostula}">Más información</a>
             </div>
         </div>`;
 
