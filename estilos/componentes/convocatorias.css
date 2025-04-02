@@ -38,7 +38,7 @@
 }
 
 
-.box-item-postulaciones a {
+div.box-item-postulaciones a {
   color:var(--font-color);
   text-decoration: none;
   padding: var(--padding-a-12-t);
@@ -46,14 +46,56 @@
   font-weight: 700;
 }
 
-.box-item-postulaciones a:hover {
+div.box-item-postulaciones a:hover {
   color:var(--font-color);
   text-decoration: underline;
 }
 
-.box-item-postulaciones p {
+div.box-item-postulaciones p {
   padding: 0 0.4rem 0 0.2rem ;
 }
 
 /*TAB INICIO POSTULACIONES*/
 
+/*modulo caja de formulario fixed*/
+
+.fixed-box-form {
+  position: fixed;
+  top: 0;
+  background-color:#f6f6f6;
+  margin: 0 auto;
+  /* width: 100%;*/
+  max-width: 1140px;
+}
+
+
+
+.margin-fixed {
+  margin-top: 224px;
+}
+
+@media only screen and (min-width: 576px) {
+  /* Desde tablets: */
+  .margin-fixed {
+    margin-top:144px;
+  }
+}
+
+@media only screen and (min-width: 701px) {
+  /* Desde tablets: */
+  .margin-fixed {
+    margin-top:130px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  /* Desde tablets: */
+  .margin-fixed {
+    margin-top: 70px;
+  }
+}
+
+
+
+
+/*modulo caja de formulario fixed*/

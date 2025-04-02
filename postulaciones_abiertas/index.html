@@ -10,8 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/cristinafrivera1984/kit-ui-serc@v2.9/dist/css/estilos.min.css">
-  <!-- <link rel="stylesheet" href="/estilos/estilos.css">-->
+   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/cristinafrivera1984/kit-ui-serc@v2.9/dist/css/estilos.min.css"> -->
+    <link rel="stylesheet" href="/estilos/estilos.css">
     <script type="module" src="../componentes/app.js"></script>   
     <title>Widget Postulaciones abiertas</title>
 </head>
@@ -19,36 +19,38 @@
 
 
 <div class="container-wordpress">    
-   <div class="row">
-        <div class="col-12 col-sm-6 col-md-6 col-lg-auto my-2">
-            <label for="validationServer04" class="form-label kit-gob">Selecciona tu región: </label>
+   <div style="position: relative;">
+        <div class="row fixed-box-form">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-auto my-2">
+                <label for="validationServer04" class="form-label kit-gob">Selecciona tu región: </label>
+            </div>
+            <div class="col my-2">
+                <select class="form-select kit-gob is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required="">
+                    <option selected="" disabled="" value="">Selecciona..</option>
+                    <option>...</option>
+                </select>
+                <div id="validationServer04Feedback" class="invalid-feedback kit-gob d-none">
+                    Por favor selecciona una región
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-auto my-2">
+                <label for="validationServer04" class="form-label kit-gob">¿En qué etapa de tu emprendimiento estás?:</label>
+            </div>
+            <div class="col my-2">
+                <select class="form-select kit-gob is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required="">
+                    <option selected="" disabled="" value="">Selecciona..</option>
+                    <option value="0">Tengo una idea de negocio</option>
+                    <option value="1">Tengo una Pyme</option>
+                    <option value="2">Tenemos una asociación</option>
+                </select>
+                <div id="validationServer04Feedback" class="invalid-feedback kit-gob d-none">
+                    Por favor selecciona en qué etapa se encuentra tu emprendimiento
+                </div>  
+            </div>
         </div>
-        <div class="col my-2">
-            <select class="form-select kit-gob is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required="">
-                <option selected="" disabled="" value="">Selecciona..</option>
-                <option>...</option>
-              </select>
-              <div id="validationServer04Feedback" class="invalid-feedback kit-gob d-none">
-                Por favor selecciona una región
-              </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-6 col-lg-auto my-2">
-            <label for="validationServer04" class="form-label kit-gob">¿En qué etapa de tu emprendimiento estás?:</label>
-        </div>
-        <div class="col my-2">
-            <select class="form-select kit-gob is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required="">
-                <option selected="" disabled="" value="">Selecciona..</option>
-                <option value="0">Tengo una idea de negocio</option>
-                <option value="1">Tengo una Pyme</option>
-                <option value="2">Tenemos una asociación</option>
-              </select>
-              <div id="validationServer04Feedback" class="invalid-feedback kit-gob d-none">
-                  Por favor selecciona en qué etapa se encuentra tu emprendimiento
-              </div>  
-        </div>
-   </div>
+    </div>
 <!--Componentes de postulaciones-->
-   <div class="my-4">
+   <div class="margin-fixed">
         <card-convocatorias tituloconvocatoria="Capital Semilla Emprende Región de Arica y Parinacota 2025" region="Arica y Parinacota" ></card-convocatorias>
         <card-convocatorias tituloconvocatoria="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a luctus est. Nunc enim quam, cursus at sagittis" region="Tarapacá" ></card-convocatorias>
         <card-convocatorias tituloconvocatoria="Capital Semilla Emprende Región de Antofagasta 2025" region="Antofagasta" ></card-convocatorias>

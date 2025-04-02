@@ -118,7 +118,7 @@
     width: fit-content;
   }
 }
-.btn-primary-dk-blue, a.btn-primary-dk-blue {
+.btn-primary-dk-blue, a.btn-primary-dk-blue, .box-item-postulaciones a.btn-primary-dk-blue {
   width: 100%;
   margin: 4px 2px;
   border: none;
@@ -127,6 +127,7 @@
   color: rgba(var(--white), 1)!important;
   background-color: rgba(var(--base-blue-dark-2), 1);
   transition: 0.3s;
+  text-decoration: none;
   text-align: center;
 }
 
