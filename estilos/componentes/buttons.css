@@ -5,7 +5,7 @@
 
 .btn-primary, a.btn-primary{
   width: 100%;
-  margin: 0px 2px;
+  margin: 2px;
   border: none;
   font-size: 1rem;
   padding: var(--btn-padding-sm);
@@ -74,8 +74,23 @@
   padding: var(--chips-padding);
   border-radius: var(--border-radius-chips);
   cursor: none;
-  font-size: var(--font-size);
-  font-weight: 500;
+  pointer-events: none;
+  font-size: var(--font-size-small);
+  font-weight: 700;
+  width:fit-content;
+  margin: 0 0.3rem;
+}
+
+.chips-main.primary-info-dk-blue{
+  background-color: rgba(var( --base-blue-dark-1), 1);
+  border: none;
+  color: rgba(var(--white), 1);
+}
+
+.chips-main.primary-info-light-blue {
+  background-color: rgba(var(--base-info-light-4), 1);
+  border: none;
+  color: rgba(var(--base-info-dark-4), 1);
 }
 
 .chips-main.sucess {
@@ -84,8 +99,20 @@
   color: rgba(var(--white), 1);
 }
 
+.chips-main.sucess-light {
+  background-color: rgba(var(--sucess-light-4), 1);
+  border: none;
+  color: rgba(var(--sucess-dark-4), 1);
+}
+
 .chips-main.warning-orange {
   background-color: rgba(var(--warning-orange), 1);
+  border: none;
+  color:#000000;
+}
+
+.chips-main.warning-orange-light {
+  background-color: #FFAA5C;
   border: none;
   color: rgba(var(--font-color), 1);
 }
@@ -96,10 +123,22 @@
   color: rgba(var(--font-color), 1);
 }
 
+.chips-main.warning-yellow-light {
+  background-color: rgba(var(--warning-yellow-light), 1);
+  border: none;
+  color: rgba(var(--font-color), 1);
+}
+
 .chips-main.danger {
   background-color: rgba(var(--danger-dark), 1);
   border: none;
   color: rgba(var(--white), 1);
+}
+
+.chips-main.danger-light {
+  background-color: rgba(var(--base-advertencia-light-4), 1);
+  border: none;
+  color: #9b0303;
 }
 
 .chips-main.card-cdn {

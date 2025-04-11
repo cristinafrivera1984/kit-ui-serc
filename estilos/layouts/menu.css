@@ -119,19 +119,16 @@ button.btn-menu {
   color: rgba(var(--main-color), 1);
   font-size: 1.2rem;
   font-weight: 700;
+  height: fit-content;
+  display: block;
 }
 
-@media only screen and (min-width: 802px) {
+@media only screen and (min-width: 800px) {
   button.btn-menu {
     display: none;
   }
 }
-
-@media only screen and (max-width: 801px) {
-  button.btn-menu {
-    display: block;
-  }
-}
+ 
 
 ul.list-menu {
   list-style: none;

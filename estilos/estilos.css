@@ -26,6 +26,10 @@ body {
   margin: 0;
 }
 
+body.kit {
+  background-color:rgba(var( --grey-5), 1);
+}
+
 /* Reset básico para márgenes y padding */
 html,
 body,
