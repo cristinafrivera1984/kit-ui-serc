@@ -1,6 +1,6 @@
 /*BOOTSTRAP*/
 .table td {
-  padding: 1rem;
+  padding:1rem 0.5rem;
 }
 
 .table-striped>tbody>tr:nth-of-type(2n + 1)>* {

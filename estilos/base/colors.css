@@ -5,6 +5,7 @@
   --grey-5: 242, 242, 242;
   --grey-10: 230, 230, 230;
   --grey-20: 204, 204, 204;
+  --grey-30: 179, 179, 179;
   --base-blue: 15, 105, 196; /*#0F69C4*/
   --base-blue-dark-1: 0, 81, 168; /*Primario darken-1*/
   --base-blue-dark-2: 0, 59, 141; /*Primario darken-2*/
@@ -46,6 +47,15 @@
   --acento-red-dark-3:215, 44, 37; /*#D72C25*/
   --acento-red-dark-4:200, 32, 24; /*#C82018*/
 }
+.font-color {
+  color: rgba(var( --font-color), 1);
+  filter: ;
+}
+
+.color-gray-30{
+  color: rgba(var( --grey-30), 1);
+  filter: ;
+}
 
 .color-blue {
   color: rgba(var(--base-blue), 1);
@@ -84,8 +94,7 @@
 
 .color-base-exito {
   color: rgba(var(--sucess-base, 1));
-  filter: invert(58%) sepia(38%) saturate(671%) hue-rotate(73deg)
-    brightness(92%) contrast(87%);
+  filter: invert(47%) sepia(90%) saturate(334%) hue-rotate(73deg) brightness(95%) contrast(86%);
 }
 
 .color-base-exito-dk-3 {
