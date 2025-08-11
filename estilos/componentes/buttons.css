@@ -117,6 +117,13 @@
   color: rgba(var(--font-color), 1);
 }
 
+
+.chips-main.neutral-gray-light {
+  background-color: rgba(var(--grey-10), 1);
+  border: none;
+  color: rgba(var(--font-color), 1);
+}
+
 .chips-main.warning-yellow {
   background-color: rgba(var(--warning-yellow), 1);
   border: none;

@@ -1,0 +1,33 @@
+@import url("/estilos/base/variables.css");
+@import url("/estilos/base/colors.css");
+@import url("/estilos/base/bootstrap_clases.css");
+@import url("/estilos/utilities/spacing.css");
+
+/*estilos de historial*/
+
+div.historial-box {
+  padding: 24px 0;
+  border-bottom: 1px solid rgba(var(--grey-10), 1);
+}
+
+div.historial-box:last-child {
+  border-bottom: none!important;
+}
+
+
+div.historial-box p.small-text {
+  font-size: var(--font-size-small);
+  color: var(--color-font);
+  padding: 6px 0;
+}
+
+p.small-text.grey {
+  color: #666666;
+}
+
+
+/*  estilos de historial*/
+
+
+
+

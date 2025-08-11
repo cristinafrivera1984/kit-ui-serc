@@ -11,6 +11,7 @@
 @import url('/estilos/componentes/convocatorias.css');
 @import url('/estilos/componentes/cuestionario.css');
 @import url('/estilos/componentes/form.css');
+@import url('/estilos/componentes/historial.css');
 @import url('/estilos/componentes/steps.css');
 @import url('/estilos/componentes/tab_inicio.css');
 @import url('/estilos/layouts/footer.css');
@@ -70,3 +71,6 @@ figure {
 }
 
 
+td.white-space-fix {
+  white-space: nowrap!important;
+}
