@@ -55,6 +55,11 @@ div.box-item-postulaciones p {
   padding: 0 0.4rem 0 0.2rem ;
 }
 
+span.cierres-postulaciones {
+  background-color: antiquewhite;
+  border-radius: 24px;
+}
+
 /*TAB INICIO POSTULACIONES*/
 
 /*modulo caja de formulario fixed*/

@@ -29,6 +29,8 @@ a.page-link.kit-gob.arrows {
   border: none;
   color: rgba(var(--font-color), 1);
   height: fit-content;
+  padding: 6px;
+  border-radius: 2px;
 }
 
 li.page-item.kit-gob.active {
@@ -43,6 +45,7 @@ li.page-item.kit-gob.active.a {
 
 li.page-item.kit-gob a {
   /*padding: 0.2rem 1rem;*/
+  text-decoration: underline;
 }
 
 ul.pagination.kit-gob {

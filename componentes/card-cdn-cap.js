@@ -2,7 +2,7 @@ class CardCdnCapacitaciones extends HTMLElement {
     constructor() {
         super();
         this.titulocurso = this.getAttribute('titulocurso') ?? "Quiero emprender";
-        this.textoresumen = this.getAttribute('textoresumen') ?? "Texto resumen del curso";
+        this.textoresumen = this.getAttribute('textoresumen') ?? "Texto resumen del curso Rerat iaculis ante, tincidunt dapibus leo mollis sit amet.";
         this.catcurso = this.getAttribute('categoria') ?? "categoria";
         this.fechacurso = this.getAttribute('fecha') ?? "12/12/2026"
         this.horacurso = this.getAttribute('hora') ?? "19:00";
@@ -20,7 +20,7 @@ class CardCdnCapacitaciones extends HTMLElement {
                     </button>
                 </div>
             </div>
-            <h2 class="title-cdn">${this.titulocurso}</h2>
+            <h3 class="title-cdn">${this.titulocurso}</h3>
             <p>${this.textoresumen}</p>
             <p><strong>Fecha: </strong> ${this.fechacurso}</p>
             <p><strong>Hora: </strong> ${this.horacurso}</p>

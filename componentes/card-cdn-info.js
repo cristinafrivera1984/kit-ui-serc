@@ -1,3 +1,4 @@
+//Cards de Información de CDN'S de módulo de 3 pestaña
 class CardCdnInfo extends HTMLElement {
     constructor() {
         super();
@@ -6,27 +7,40 @@ class CardCdnInfo extends HTMLElement {
         this.telefonocentro = this.getAttribute('telcdn') ?? "+56 876 5433";
         this.mailcentro = this.getAttribute('mailcdn') ?? "abmariabustamante@centrossercotec.cl";
         this.urlcentro = this.getAttribute('urlcdn') ?? "#";
-        this.innerHTML = /*html*/ `<div class="box-item-cdn-info">
+        this.innerHTML = /*html*/ `
+        
+        <div class="box-item-cdn">
             <div class="text-center my-3">
-                <img src="../images/icons/tabs/icon_logo_cdn.svg" width="47" height="42">
+                <img src="images/icon_logo_cdn.svg" width="42" height="38" alt="Icono Centro de Desarrollo">
                 <h2 class="d-inline">${this.nombrecentro}</h2>
             </div>
         
-            <div class="d-flex flex-row">
-                <span class="material-symbols-outlined me-1 align-top"> location_on </span>
-                <p class=""> ${this.direcentro}</p>
+            <div class="d-flex flex-row my-2">
+                <div class="me-1">
+                    <span class="material-symbols-outlined align-middle"> location_on </span>
+                </div>
+                <div>
+                    <p>${this.direcentro}</p>
+                </div>
             </div>
-            <div class="d-flex flex-row">
-                <span class="material-symbols-outlined me-1 align-top"> phone_in_talk</span>
-                <p class="d-inline"> ${this.telefonocentro}</p>
+            <div class="d-flex flex-row my-2">
+                <div class="me-1">
+                    <span class="material-symbols-outlined align-middle"> phone_in_talk </span>
+                </div>
+                <div>
+                    <p>${this.telefonocentro}</p>
+                </div>
             </div>
-            <div class="d-flex flex-row">
-                <span class="material-symbols-outlined me-1 align-top"> mail </span>
-                <p class="d-inline"> ${this.mailcentro}</p>
+            <div class="d-flex flex-row my-2">
+                <div class="me-1">
+                    <span class="material-symbols-outlined align-middle">mail </span>
+                </div>
+                <div>
+                    <p>${this.mailcentro}</p>
+                </div>
             </div>
-            <div class="d-flex">
-                <a class="ver-mas" href="${this.urlcentro}">Ver más
-                    <img class="ms-2" src="../images/icons/tabs/btn_ver_mas.svg" width="20" height="20">
+            <div class="d-flex align-items-center">
+                <a href="${this.urlcentro}" class="ver-mas mx-auto">Ver más <img src="images/btn_ver_mas.svg" width="20" height="20">
                 </a>
             </div>
         </div>`;

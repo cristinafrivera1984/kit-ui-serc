@@ -8,7 +8,7 @@
   --grey-30: 179, 179, 179;
   --grey-60: 102, 102, 102;
   --base-blue: 15, 105, 196; /*#0F69C4*/
-  --base-blue-dark-1: 0, 81, 168; /*Primario darken-1*/
+  --base-blue-dark-1: 0, 70, 168; /*Primario darken-1 #0046A8*/
   --base-blue-dark-2: 0, 59, 141; /*Primario darken-2*/
   --base-blue-dark-3: 0, 38, 115; /*Primario darken-3*/
   --base-blue-dark-4: 0, 19, 90;  /*Primario darken-4*/
@@ -47,6 +47,7 @@
   --acento-red-dark-2:228, 51, 44; /*#E4332C*/
   --acento-red-dark-3:215, 44, 37; /*#D72C25*/
   --acento-red-dark-4:200, 32, 24; /*#C82018*/
+  --link-visited: 76, 44, 146; /*#4C2C92, es morado*/
 }
 .font-color {
   color: rgba(var( --font-color), 1);
@@ -64,14 +65,20 @@
 }
 .color-blue-dark-3 {
   color: rgba(var(--base-blue-dark-3), 1);
-  filter: invert(18%) sepia(91%) saturate(1681%) hue-rotate(200deg)
-    brightness(91%) contrast(109%);
+  filter: brightness(0) saturate(100%) invert(11%) sepia(64%) saturate(3690%) hue-rotate(215deg) brightness(96%) contrast(105%);
+
 }
 
 .color-blue-dark-1 {
   color: rgba(var(--base-blue-dark-1), 1);
   /*filter: invert(18%) sepia(91%) saturate(1681%) hue-rotate(200deg) brightness(91%) contrast(109%);*/
 }
+
+.color-blue-dark-2 {
+  color: rgba(var(--base-blue-dark-2), 1);
+  /*filter: invert(18%) sepia(91%) saturate(1681%) hue-rotate(200deg) brightness(91%) contrast(109%);*/
+}
+
 
 .color-base-advertencia {
   color: rgba(var(--base-advertencia, 1));

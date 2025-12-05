@@ -12,6 +12,9 @@
   color: rgba(var(--white), 1);
   background-color: rgba(var(--base-blue-dark-1), 1);
   transition: 0.3s;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .btn-primary:hover {
@@ -42,6 +45,9 @@
   background-color: transparent;
   font-size: 1rem;
   padding: var(--btn-padding-sm);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .btn-secondary:hover {
@@ -79,6 +85,7 @@
   font-weight: 700;
   width:fit-content;
   margin: 0 0.3rem;
+  white-space: nowrap;
 }
 
 .chips-main.primary-info-dk-blue{

@@ -6,10 +6,15 @@ class CardConvocatorias extends HTMLElement {
         this.cierreconvocatoria = this.getAttribute('cierreconvocatoria') ?? "12/12/2026";
         this.region = this.getAttribute('region') ?? "Arica y Parinacota";
         this.urlpostula = this.getAttribute('urlpostula') ?? "#";
+        this.alertadias = this.getAttribute('alertadias') ?? "3";
         this.innerHTML = /*html*/ `<div class="box-item-postulaciones row">
             <div class="col-md-9">
-                <a href="${this.urlpostula}">${this.tituloconvocatoria}</a>
-                <div class="d-flex flex-sm-row flex-column mb-2">
+        
+                <a class="me-2 d-inline" href="${this.urlpostula}">${this.tituloconvocatoria}</a>
+                <span class="chips-main danger-light">&#9679; Cierra en 3 días</span>
+                <span class="chips-main warning-yellow-light">&#9679; Cierra en 6 días</span>
+                <span class="chips-main primary-info-light-blue">&#9679; Cierra en 9 días</span>
+                <div class="d-flex flex-sm-row flex-column mb-2 mt-3">
                     <div class="me-2 my-1">
                         <span class="material-symbols-outlined align-bottom"> calendar_month </span>
                         <p class="d-inline"><strong>Inicio:</strong> ${this.inicioconvocatoria} </p>

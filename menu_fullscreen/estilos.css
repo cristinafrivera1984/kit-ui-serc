@@ -1,0 +1,59 @@
+/* Estilo para el área de contenido con degradado y textura */
+.content-area {
+    min-height: 100vh;
+    background-color: #add8e6;
+
+    background-image:
+        /* capa de color (transparente para ver la textura) */
+        linear-gradient(rgba(0, 38, 115, 0.85), rgba(0, 19, 90, 0.85)),
+        /* textura */
+        url('images/back_texture.png'),
+        /* degradado */
+        linear-gradient(to bottom, #add8e6, #004085);
+
+    background-repeat: no-repeat, repeat, no-repeat;
+    background-size: cover, auto, 100% 100%;
+}
+
+
+/* Estilos para los botones del menú lateral */
+#sidebarMenu .nav-link {
+    font-family: "Roboto", sans-serif;
+    font-size: 19px;
+    color: rgba(var( --base-blue-dark-2), 1);;
+    margin: 5px 0;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: 500;
+}
+
+
+#sidebarMenu .nav-link:hover {
+    background-color: #e9ecef;
+}
+
+
+/* Estilo para el botón activo */
+#sidebarMenu .nav-link.active {
+    background-color:rgba(var( --base-blue-dark-4), 0.9); /* Azul oscuro */
+    color: #fff; /* Letras blancas */
+    font-family: "Roboto", sans-serif;
+    font-size: 19px;
+}
+
+/* Ajustes para que el layout funcione correctamente */
+.modal-body {
+    overflow-y: hidden; /* Evita el scroll en el body del modal */
+}
+
+.sidebar {
+    height: calc(100vh - 56px); /* Altura del viewport menos el header del modal */
+    overflow-y: auto;
+}
+
+
+.franja-menu {
+    background-image: url(images/franja_menu.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+}

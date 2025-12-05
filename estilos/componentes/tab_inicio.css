@@ -1,9 +1,12 @@
 @import url('/estilos/base/variables.css');
 @import url('/estilos/base/typography.css');
-@import url('/estilos/base/colors.css');
-@import url('/estilos/base/bootstrap_clases.css');
 @import url('/estilos/utilities/spacing.css');
 @import url('/estilos/componentes/buttons.css');
+@import url('/estilos/base/bootstrap_clases.css');
+@import url('/estilos/base/colors.css');
+
+/*Este css pertenece a estilos de el módulo de 3 pestañas, que incluye: las Cards de los cdn's y Cards de capacitaciones cdns*/
+
 
 .nav-tabs .nav-link {
   border-radius: 0!important;
@@ -85,67 +88,337 @@ li.nav-item  {
 
 
 /*TAB INICIO ASESORIA CDN*/
-.container-boxes-cdn {
+.cards-container {
   display: grid;
-  grid-template-columns: repeat(
-      auto-fit,
-      minmax(
-          320px,
-          1fr
-      )
-  );
-  gap: 36px;
-  word-wrap: break-word;
-  word-break:normal;
-  margin: 0 20px;
+  gap: 1.2rem;
+  grid-template-columns: 1fr; /* base: una columna en mobile (<768px) */
+  padding: 1rem;
 }
 
-/*TAB INICIO CDN - INFO*/
-.box-item-cdn-info {
-  background-color: rgba(var(--grey-5), 1);
-  border-radius:var(--border-radius-cards);
-  padding: var(--padding-cards);
-  font-family: var(--font-family-sans-s);
-  height: auto;
-}
-
-.box-item-cdn-info h2.title-cdn  {
-  font-size: var(--font-size-h4-mob);
-  color: rgba(var(--font-color), 1);
-  line-height: normal;
-  font-weight: 700;
-  padding: 0;
-  margin-bottom: 1rem;
-}
-
-@media (min-width: 800px) {
-.box-item-cdn-info h2 {
-    font-size: var(--font-size-h4);
+/* Desde 768px: 2 columnas */
+@media (min-width: 704px) {
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-.box-item-cdn-info p  {
-  font-size:1rem;
-  color: rgba(var(--font-color), 1);
-  line-height:150%;
-  padding: 0;
-  margin-bottom: 8px;
+/* Desde 1024px: 3 columnas */
+@media (min-width: 1024px) {
+  .cards-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
-.box-item-cdn-info a.ver-mas  {
-  font-size:1rem;
-  color: rgba(var(--font-color), 1);
-  line-height:150%;
-  padding: 4px 20px;
-  margin: 8px auto;
-  text-decoration: none;
-  border:1px solid transparent;
-  transition: 0.3s;
-  border-radius: 24px;
+
+
+/*TAB INICIO ASESORIA CDN*/
+.box-item-cdn {
+    background-color: rgba(var(--grey-5), 1);
+    border-radius:var(--border-radius-cards);
+    padding: var(--padding-cards);
+    font-family: var(--font-family-sans-s);
+    height: auto;
+    min-width: 352px;
+    word-break: break-word;
+    white-space: normal;
 }
-.box-item-cdn-info a.ver-mas:hover  {
-  color: rgba(var(--base-blue), 1);
-  border: 1px solid rgba(var(--base-blue), 1);
-  border-radius: 24px;
+
+.box-item-cdn h2  {
+    font-size: var(--font-size-h4-mob);
+    color: rgba(var(--font-color), 1);
+    line-height: normal;
+    font-weight: 700;
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+  
+  @media (min-width: 800px) {
+.box-item-cdn h2{
+      font-size: var(--font-size-h4);
+      font-weight: 700;
+    }
+  }
+  
+.box-item-cdn h3  {
+    font-size: var(--font-size-h5-mob);
+    color: rgba(var(--font-color), 1);
+    line-height: normal;
+    font-weight: 700;
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+  
+  @media (min-width: 800px) {
+.box-item-cdn h3{
+      font-size: var(--font-size-h5);
+      font-weight: 700;
+    }
+  }
+
+.box-item-cdn p  {
+    font-size:1rem;
+    color: rgba(var(--font-color), 1);
+    line-height:150%;
+    padding: 0;
+    margin-bottom: 8px;
+  }
+  
+.box-item-cdn a.ver-mas  {
+    font-size:var(--font-size-h5-mob);
+    color: rgba(var(--font-color), 1);
+    line-height:150%;
+    padding: 4px 20px;
+    margin-bottom: 8px;
+    text-decoration: none;
+    border:1px solid transparent;
+    transition: 0.3s;
+    border-radius: 24px;
+  }
+.box-item-cdn a.ver-mas:hover  {
+    color: rgba(var(--base-blue), 1);
+    border: 1px solid rgba(var(--base-blue), 1);
+    border-radius: 24px;
+  }
+
+
+  /*ESTILOS ACORDEON*/
+  
+/* --- Variables (ajusta colores si quieres) --- */
+:root{
+  --sct-blue: #1e73be;      /* color abierto (azul) */
+  --sct-blue-dark: #175a94; /* hover/foco */
+  --sct-red:  #ff4d4d;      /* color cerrado (rojo) */
 }
-/*TAB INICIO CDN - INFO*/
+
+/* --- Estilos generales del acordeón personalizado --- */
+/* Esto cubre 2 casos: cuando pones la clase en el container (.accordion-custom.sct-inicio)
+   o cuando la pones en el botón (.accordion-button.sct-inicio). */
+.accordion-button.sct-inicio,
+.accordion-custom.sct-inicio .accordion-button {
+  background: rgba(var(  --base-blue), 1) !important;   /* color cerrado */
+  background-image: none !important;          /* quita gradientes SVG de bootstrap */
+  color: #ffffff !important;
+  box-shadow: none !important;
+  border: none !important;
+  transition: background 0.18s ease, color 0.18s ease;
+}
+
+/* --- Estado ABIERTO (activo) --- */
+.accordion-button.sct-inicio:not(.collapsed),
+.accordion-custom.sct-inicio .accordion-button:not(.collapsed),
+.accordion-button.sct-inicio[aria-expanded="true"],
+.accordion-custom.sct-inicio .accordion-button[aria-expanded="true"],
+.accordion-custom.sct-inicio .accordion-item.show > .accordion-header > .accordion-button,
+.accordion-button.sct-inicio[aria-expanded="true"] + .accordion-collapse.collapse.show {
+  background: rgba(var( --base-blue-dark-2), 1) !important;
+   background-image: none !important;
+  color: #ffffff !important;
+  box-shadow: none !important;
+}
+
+/* Hover / focus */
+.accordion-button.sct-inicio:hover,
+.accordion-custom.sct-inicio .accordion-button:hover,
+.accordion-button.sct-inicio:focus,
+.accordion-custom.sct-inicio .accordion-button:focus {
+  background: rgba(var( --base-blue-dark-2), 1) !important;
+  color: #ffffff !important;
+  outline: none !important;
+}
+
+/* Flecha / icono (invirtiendo el SVG para que se vea blanco) */
+.accordion-button.sct-inicio::after,
+.accordion-custom.sct-inicio .accordion-button::after {
+  filter: invert(1) !important;
+  -webkit-filter: invert(1) !important;
+}
+
+/* Cuerpo del acordeón (opcional) */
+.accordion-custom.sct-inicio .accordion-body,
+.accordion-button.sct-inicio + .accordion-collapse .accordion-body {
+    background: #fff;
+    color: #222;
+}
+
+
+
+  /*ESTILOS ACORDEON*/
+
+.cards-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+/* Contenedor scrolleable horizontal */
+.cards-container2 {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  width: 100%;
+}
+
+.cards-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Cards */
+.card {
+  flex: 0 0 calc(50% - 0.5rem);
+  scroll-snap-align: start;
+  background: #f5f5f5;
+  border-radius: 1rem;
+  padding: 2rem 1rem;
+  text-align: center;
+  font-weight: 600;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+/* Desde 380px hacia abajo → 1 card por vista */
+@media (max-width: 428px) {
+  .card {
+    flex: 0 0 100%;
+  }
+}
+
+/* Navegación inferior */
+.nav-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-btn {
+  background: rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background 0.3s, opacity 0.3s;
+}
+
+.nav-btn:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.nav-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.nav-btn:focus {
+  outline: 2px solid var(--base-blue, #007BFF);
+  outline-offset: 2px;
+}
+
+.cards-container:focus {
+  outline: 2px solid var(--base-blue, #007BFF);
+}
+
+
+/* Contador */
+.counter {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+
+/*ACA DOTS*/
+.nav-area-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+/* Botones base (los dots) */
+.nav-btn-dots {
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  background-color: rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: background-color 0.25s ease, transform 0.2s ease, border-color 0.25s ease;
+}
+
+/* Dot activo (el que indica la card visible) */
+.nav-btn-dots.active,
+.nav-btn-dots[aria-selected="true"] {
+  background-color: rgba(0, 0, 0, 0.85);
+  transform: scale(1.2);
+}
+
+/* Estado deshabilitado */
+.nav-btn-dots:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Estado hover (para quienes usan mouse) */
+.nav-btn-dots:hover:not(:disabled) {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Focus visible (para teclado y accesibilidad) */
+.nav-btn-dots:focus-visible {
+  outline: 3px solid #007BFF; /* alto contraste */
+  outline-offset: 3px;
+  border-color: #007BFF;
+}
+
+/* Animación ligera */
+@media (prefers-reduced-motion: reduce) {
+  .nav-btn-dots {
+    transition: none;
+  }
+}
+
+/*ACA DOTS*/
+
+
+
+
+
+
+
+/*Para esconder y aparecer section en escritorio y celular*/
+
+/* Por defecto: mostrar versión escritorio, ocultar versión celular */
+section.tab-celular {
+  display: none;
+}
+
+section.tab-escritorio {
+  display: block;
+}
+
+/* Desde 650px hacia abajo: ocultar escritorio, mostrar celular */
+@media (max-width: 650px) {
+  section.tab-escritorio {
+    display: none;
+  }
+
+  section.tab-celular {
+    display: block;
+  }
+}
+
+
+/*Para esconder y aparecer section en escritorio y celular*/
