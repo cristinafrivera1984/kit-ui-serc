@@ -18,13 +18,41 @@
   border: none;
 }
 
-a.page-link.kit-gob {
+a.page-link.kit-gob, button.page-link.kit-gob {
   background-color: transparent;
   border: none;
-  color: rgba(var(--base-blue), 1);
+  color: rgba(var(--base-blue-dark-1), 1);
 }
 
-a.page-link.kit-gob.arrows {
+a.page-link.kit-gob:hover, button.page-link.kit-gob:hover {
+  color:rgba(var( --base-blue-dark-4), 1);
+  font-weight: 700;
+}
+
+a.page-link.kit-gob:active, button.page-link.kit-gob:active {
+  background-color: rgba(var(--base-blue), 0.08);
+  border-color: rgba(var(--base-blue), 1);
+}
+
+a.page-link.kit-gob:focus, button.page-link.kit-gob:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(var(--yellow-focus), 1);
+}
+
+
+
+li.page-item.kit-gob.active, button.page-item.kit-gob.active {
+  background-color: rgba(var(--base-blue-dark-1), 1);
+  color: rgba(var(--white), 1);
+  border-radius: 2px;
+}
+
+li.page-item.kit-gob.active.a, button.page-item.kit-gob.active.a {
+  color: rgba(var(--white), 1);
+}
+
+
+a.page-link.kit-gob.arrows, button.page-link.kit-gob.arrows {
   background-color: rgba(var(--grey-5), 1);
   border: none;
   color: rgba(var(--font-color), 1);
@@ -33,15 +61,10 @@ a.page-link.kit-gob.arrows {
   border-radius: 2px;
 }
 
-li.page-item.kit-gob.active {
-  background-color: rgba(var(--base-blue), 1);
-  color: rgba(var(--white), 1);
-  border-radius: 2px;
+a.page-link.kit-gob.arrows:hover, button.page-link.kit-gob.arrows:hover{
+  background-color: rgba(var(--grey-20), 1);
 }
 
-li.page-item.kit-gob.active.a {
-  color: rgba(var(--white), 1);
-}
 
 li.page-item.kit-gob a {
   /*padding: 0.2rem 1rem;*/

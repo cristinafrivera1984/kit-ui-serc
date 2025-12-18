@@ -48,6 +48,7 @@
   --acento-red-dark-3:215, 44, 37; /*#D72C25*/
   --acento-red-dark-4:200, 32, 24; /*#C82018*/
   --link-visited: 76, 44, 146; /*#4C2C92, es morado*/
+  --link-hover-blue: 0, 48, 120; /*#003078, es el azul para hover del kit*/
 }
 .font-color {
   color: rgba(var( --font-color), 1);

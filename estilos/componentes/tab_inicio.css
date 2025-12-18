@@ -57,8 +57,36 @@ li.nav-item  {
   font-size: 1.2rem;
   font-family: var(--font-family-main);
   border-radius: 40px;
-
 }
+
+.nav-tabs .nav-link.module-tabs-inicio:hover  {
+  background-color:rgba(var(--base-blue-dark-1), 1);
+  color: white;
+  font-size: 1.2rem;
+  font-family: var(--font-family-main);
+  border-radius: 40px;
+}
+
+.nav-tabs .nav-link.module-tabs-inicio:active  {
+  background-color:rgba(var(--base-blue-dark-1), 1);
+  color: white;
+  font-size: 1.2rem;
+  font-family: var(--font-family-main);
+  border-radius: 40px;
+}
+
+
+.nav-tabs .nav-link.module-tabs-inicio:focus-visible {
+  outline: none;
+  color: white;
+  box-shadow: 0 0 0 3px rgba(var(--yellow-focus), 1);
+}
+
+.nav-tabs .nav-link.module-tabs-inicio:active {
+  background-color: rgba(var(--base-blue), 0.08);
+  border-color: rgba(var(--base-blue), 1);
+}
+
 
 .container-titulo {
   margin:28px 30px;
@@ -142,7 +170,7 @@ li.nav-item  {
 .box-item-cdn h3  {
     font-size: var(--font-size-h5-mob);
     color: rgba(var(--font-color), 1);
-    line-height: normal;
+    line-height: 1.4;
     font-weight: 700;
     padding: 0;
     margin-bottom: 1rem;
@@ -171,14 +199,31 @@ li.nav-item  {
     margin-bottom: 8px;
     text-decoration: none;
     border:1px solid transparent;
-    transition: 0.3s;
+    transition: 
+    color 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    background-color 0.3s ease;
     border-radius: 24px;
   }
+
 .box-item-cdn a.ver-mas:hover  {
     color: rgba(var(--base-blue), 1);
     border: 1px solid rgba(var(--base-blue), 1);
     border-radius: 24px;
   }
+
+.box-item-cdn a.ver-mas:focus-visible {
+  outline: none;
+  color: rgba(var(--base-blue), 1);
+  box-shadow: 0 0 0 3px rgba(var(--yellow-focus), 1);
+}
+
+.box-item-cdn a.ver-mas:active {
+  background-color: rgba(var(--base-blue), 0.08);
+  border-color: rgba(var(--base-blue), 1);
+}
+
 
 
   /*ESTILOS ACORDEON*/

@@ -26,6 +26,7 @@ class CardCdnCapacitaciones extends HTMLElement {
             <p><strong>Hora: </strong> ${this.horacurso}</p>
             <p><strong>Región: </strong> ${this.regioncurso}</p>
             <p><strong>Centro: </strong> ${this.centrocurso}</p>
+            <p><strong>Categoría: </strong> ${this.catcurso}</p>
             <div class="d-flex justify-content-center">
                 <a href="${this.urlcurso}" class="ver-mas">Ver más <img class="ms-2 align-middle" src="../images/icons/vermas.svg" width="24" height="24"></a>
             </div>
