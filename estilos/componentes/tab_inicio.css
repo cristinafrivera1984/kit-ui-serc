@@ -78,13 +78,14 @@ li.nav-item  {
 
 .nav-tabs .nav-link.module-tabs-inicio:focus-visible {
   outline: none;
-  color: white;
+  color: rgba(var(--base-blue-dark-2), 1);
   box-shadow: 0 0 0 3px rgba(var(--yellow-focus), 1);
 }
 
 .nav-tabs .nav-link.module-tabs-inicio:active {
   background-color: rgba(var(--base-blue), 0.08);
   border-color: rgba(var(--base-blue), 1);
+  color: rgba(var(--base-blue-dark-2), 1);
 }
 
 
@@ -95,6 +96,24 @@ li.nav-item  {
   align-content: center;
   justify-content: center;
 }
+
+/*TAB INICIO ASESORIA CDN*/
+.container-titulo {
+  margin:28px 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-content: center;
+  justify-content: center;
+}
+
+/* Desde 768px: 2 columnas */
+@media (min-width:478px) {
+ .container-titulo {
+  flex-direction: column;    
+  }
+}
+
 
 .form-switch .form-check-input {
   height: 24px;
@@ -378,9 +397,14 @@ li.nav-item  {
 .counter {
   text-align: center;
   font-size: 0.9rem;
-  color: #555;
+  color: rgba(var(--font-color), 1);
+  margin: 0 0 16px 0;
 }
 
+.counter span.font-active{
+    font-weight: 700;
+    color: rgba(var(--base-blue-dark-1), 1);
+}
 
 /*ACA DOTS*/
 .nav-area-dots {
@@ -439,10 +463,6 @@ li.nav-item  {
 
 
 
-
-
-
-
 /*Para esconder y aparecer section en escritorio y celular*/
 
 /* Por defecto: mostrar versión escritorio, ocultar versión celular */
@@ -467,3 +487,12 @@ section.tab-escritorio {
 
 
 /*Para esconder y aparecer section en escritorio y celular*/
+
+
+
+/*botones flechas de mobile en acordeon*/
+
+button.nav-btn-mob-3p {
+  border:none;
+  background-color: transparent;
+}
