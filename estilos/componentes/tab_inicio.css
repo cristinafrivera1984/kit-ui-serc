@@ -78,7 +78,6 @@ li.nav-item  {
 
 .nav-tabs .nav-link.module-tabs-inicio:focus-visible {
   outline: none;
-  color: rgba(var(--base-blue-dark-2), 1);
   box-shadow: 0 0 0 3px rgba(var(--yellow-focus), 1);
 }
 
@@ -89,19 +88,12 @@ li.nav-item  {
 }
 
 
-.container-titulo {
-  margin:28px 30px;
-  display: flex;
-  gap: 20px;
-  align-content: center;
-  justify-content: center;
-}
 
 /*TAB INICIO ASESORIA CDN*/
 .container-titulo {
   margin:28px 30px;
   display: flex;
-  flex-direction: row;
+  flex-direction:column;
   gap: 20px;
   align-content: center;
   justify-content: center;
@@ -110,7 +102,7 @@ li.nav-item  {
 /* Desde 768px: 2 columnas */
 @media (min-width:478px) {
  .container-titulo {
-  flex-direction: column;    
+  flex-direction: row;    
   }
 }
 
